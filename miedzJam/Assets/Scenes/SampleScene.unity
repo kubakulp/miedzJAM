@@ -1122,10 +1122,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   karty:
-  - {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e, type: 3}
-  - {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e, type: 3}
-  - {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d, type: 3}
-  - {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d, type: 3}
+  - {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d, type: 3}
+  - {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d, type: 3}
+  - {fileID: 8763130751620336323, guid: 1a3ff1ac8cbbc014993d74e0cd7f4a8c, type: 3}
+  - {fileID: 8763130751620336323, guid: 1a3ff1ac8cbbc014993d74e0cd7f4a8c, type: 3}
+  game: {fileID: 925579770}
 --- !u!4 &747368917
 Transform:
   m_ObjectHideFlags: 0
@@ -1371,17 +1372,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miedzValue: 1
-  srebroValue: 2
-  zadowolenieValue: 5
-  energiaValue: 3
-  zanieczyszczenieValue: 4
-  gornicyValue: 6
-  robotyValue: 7
-  wynagrodzenieValue: 8
-  elektrownieWegloweValue: 9
-  elektrownieWiatroweValue: 10
-  zuzycieEnergiValue: 12
-  poziomWydobyciaValue: 11
+  srebroValue: 1
+  zadowolenieValue: 1
+  energiaValue: 1
+  zanieczyszczenieValue: 1
+  gornicyValue: 1
+  robotyValue: 1
+  wynagrodzenieValue: 1
+  elektrownieWegloweValue: 1
+  elektrownieWiatroweValue: 1
+  zuzycieEnergiValue: 1
+  poziomWydobyciaValue: 1
+  miedzWin: 0
+  srebroWin: 0
+  zadowolenieWin: 0
+  energiaWin: 0
+  zanieczyszczenieWin: 0
+  gornicyWin: 0
+  robotyWin: 0
+  wynagrodzenieWin: 0
+  elektrownieWegloweWin: 0
+  elektrownieWiatroweWin: 0
+  zuzycieEnergiWin: 0
+  poziomyWydobyciaWin: 0
+  miedzLose: 0
+  srebroLose: 0
+  zadowolenieLose: 0
+  energiaLose: 0
+  zanieczyszczenieLose: 0
+  gornicyLose: 0
+  robotyLose: 0
+  wynagrodzenieLose: 0
+  elektrownieWegloweLose: 0
+  elektrownieWiatroweLose: 0
+  zuzycieEnergiLose: 0
+  poziomyWydobyciaLose: 0
   miedzText: {fileID: 650766752}
   srebroText: {fileID: 691623426}
   zadowolenieText: {fileID: 786130670}

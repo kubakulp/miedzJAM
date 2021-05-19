@@ -21,6 +21,7 @@ public class Karta : MonoBehaviour
     public string PodajOpis1;
     public string PodajOpis2;
 
+    //Statystyki po kliknieciu pierwszej opcji//
     public int miedz1;
     public int srebro1;
     public int zadowolenie1;
@@ -34,6 +35,7 @@ public class Karta : MonoBehaviour
     public int zuzycieEnergi1;
     public int poziomWydobycia1;
 
+    //Statystyki po kliknieciu drugiej opcji//
     public int miedz2;
     public int srebro2;
     public int zadowolenie2;
@@ -46,6 +48,35 @@ public class Karta : MonoBehaviour
     public int elektrownieWiatrowe2;
     public int zuzycieEnergi2;
     public int poziomWydobycia2;
+
+    //Warunki//
+    public int iloscMiedziWiekszaNiz;
+    public int iloscMiedziMniejszaNiz;
+    public int iloscSrebraWiekszaNiz;
+    public int iloscSrebraMniejszaNiz;
+    public int iloscZadowoleniaWiekszaNiz;
+    public int iloscZadowoleniaMniejszaNiz;
+    public int iloscEnergiWiekszaNiz;
+    public int iloscEnergiMniejszaNiz;
+    public int iloscZanieczyszczeniaWiekszaNiz;
+    public int iloscZanieczyszczeniaMniejszaNiz;
+    public int iloscGornikowWiekszaNiz;
+    public int iloscGornikowMniejszaNiz;
+    public int iloscRobotowWiekszaNiz;
+    public int iloscRobotowMniejszaNiz;
+    public int iloscWynagrodzeniaWiekszaNiz;
+    public int iloscWynagrodzeniaMniejszaNiz;
+    public int iloscElektrowniWeglowychWiekszaNiz;
+    public int iloscElektrowniWeglowychMniejszaNiz;
+    public int iloscElektrowniWiatrowychWiekszaNiz;
+    public int iloscElektrowniWiatrowychMniejszaNiz;
+    public int iloscZuzyciaEnergiWiekszaNiz;
+    public int iloscZuzyciaEnergiMniejszaNiz;
+    public int wymaganyPoziomWydobyciaWiekszyNiz;
+    public int wymaganyPoziomWydobyciaMniejszyNiz;
+    public bool wymagaPubu;
+
+    public bool budujePub;
 
     private void Start()
     {
@@ -73,7 +104,12 @@ public class Karta : MonoBehaviour
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi1);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia1);
         Destroy(gameObject);
+        game.CheckEndOrWin();
         talia.LosujNowaKarte();
+        if(budujePub==true)
+        {
+            game.istniejePub = true;
+        }
     }
 
     public void OpcjaB()
@@ -91,6 +127,115 @@ public class Karta : MonoBehaviour
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi2);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia2);
         Destroy(gameObject);
+        game.CheckEndOrWin();
         talia.LosujNowaKarte();
+    }
+
+    private bool Porownaj(int x, int y, int z)
+    {
+        if(x>=y && (x<=z||z==0))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool CzyMozliwa(Game game)
+    {
+        if(Porownaj(game.miedzValue,iloscMiedziMniejszaNiz,iloscMiedziWiekszaNiz) == true)
+        {
+            if (Porownaj(game.srebroValue, iloscSrebraMniejszaNiz, iloscSrebraWiekszaNiz) == true)
+            {
+                if (Porownaj(game.zadowolenieValue, iloscZadowoleniaMniejszaNiz, iloscZadowoleniaWiekszaNiz) == true)
+                {
+                    if (Porownaj(game.energiaValue, iloscEnergiMniejszaNiz, iloscEnergiWiekszaNiz) == true)
+                    {
+                        if (Porownaj(game.zanieczyszczenieValue, iloscZanieczyszczeniaMniejszaNiz, iloscZanieczyszczeniaWiekszaNiz) == true)
+                        {
+                            if (Porownaj(game.gornicyValue, iloscGornikowMniejszaNiz, iloscGornikowWiekszaNiz) == true)
+                            {
+                                if (Porownaj(game.robotyValue, iloscRobotowMniejszaNiz, iloscRobotowWiekszaNiz) == true)
+                                {
+                                    if (Porownaj(game.wynagrodzenieValue, iloscWynagrodzeniaMniejszaNiz, iloscWynagrodzeniaWiekszaNiz) == true)
+                                    {
+                                        if (Porownaj(game.elektrownieWegloweValue, iloscElektrowniWeglowychMniejszaNiz, iloscElektrowniWeglowychWiekszaNiz) == true)
+                                        {
+                                            if (Porownaj(game.elektrownieWiatroweValue, iloscElektrowniWiatrowychMniejszaNiz, iloscElektrowniWiatrowychWiekszaNiz) == true)
+                                            {
+                                                if (Porownaj(game.zuzycieEnergiValue, iloscZuzyciaEnergiMniejszaNiz, iloscZuzyciaEnergiWiekszaNiz) == true)
+                                                {
+                                                    if (Porownaj(game.poziomWydobyciaValue, wymaganyPoziomWydobyciaMniejszyNiz, wymaganyPoziomWydobyciaWiekszyNiz) == true)
+                                                    {
+                                                        if((wymagaPubu == true && game.istniejePub == true)||wymagaPubu == false)
+                                                        {
+                                                            return true;
+                                                        }
+                                                        else
+                                                        {
+                                                            return false;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        return false;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    return false;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                return false;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            return false;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        return false;
+                                    }
+                                }
+                                else
+                                {
+                                    return false;
+                                }
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
     }
 }

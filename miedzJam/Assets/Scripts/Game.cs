@@ -18,6 +18,32 @@ public class Game : MonoBehaviour
     public int zuzycieEnergiValue;
     public int poziomWydobyciaValue;
 
+    public int miedzWin;
+    public int srebroWin;
+    public int zadowolenieWin;
+    public int energiaWin;
+    public int zanieczyszczenieWin;
+    public int gornicyWin;
+    public int robotyWin;
+    public int wynagrodzenieWin;
+    public int elektrownieWegloweWin;
+    public int elektrownieWiatroweWin;
+    public int zuzycieEnergiWin;
+    public int poziomyWydobyciaWin;
+
+    public int miedzLose;
+    public int srebroLose;
+    public int zadowolenieLose;
+    public int energiaLose;
+    public int zanieczyszczenieLose;
+    public int gornicyLose;
+    public int robotyLose;
+    public int wynagrodzenieLose;
+    public int elektrownieWegloweLose;
+    public int elektrownieWiatroweLose;
+    public int zuzycieEnergiLose;
+    public int poziomyWydobyciaLose;
+
     public Text miedzText;
     public Text srebroText;
     public Text zadowolenieText;
@@ -32,6 +58,8 @@ public class Game : MonoBehaviour
     public Text poziomWydobyciaText;
 
     public Talia talia;
+
+    public bool istniejePub;
 
     private void Start()
     {
@@ -120,5 +148,35 @@ public class Game : MonoBehaviour
     {
         poziomWydobyciaValue = poziomWydobyciaValue + x;
         poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
+    }
+
+    public void CheckEndOrWin()
+    {
+
+        if ((miedzWin <= miedzValue) || (srebroWin <= srebroValue) || (zadowolenieWin <= zadowolenieValue) || 
+            (energiaWin <= energiaValue) || (zanieczyszczenieWin <= zanieczyszczenieValue) || (gornicyWin <= gornicyValue) ||
+            (robotyWin <= robotyValue) || (wynagrodzenieWin <= wynagrodzenieValue) || (elektrownieWegloweWin <= elektrownieWegloweValue) || 
+            (elektrownieWiatroweWin <= elektrownieWiatroweValue) || (zuzycieEnergiWin <= zuzycieEnergiValue) || (poziomyWydobyciaWin <= poziomWydobyciaValue))
+        {
+            Win();
+        }
+        else if ((miedzLose >= miedzValue) || (srebroLose >= srebroValue) || (zadowolenieLose >= zadowolenieValue) ||
+            (energiaLose >= energiaValue) || (zanieczyszczenieLose >= zanieczyszczenieValue) ||
+            (gornicyLose >= gornicyValue) || (robotyLose >= robotyValue) || (wynagrodzenieLose >= wynagrodzenieValue) || 
+            (elektrownieWegloweLose >= elektrownieWegloweValue) || (elektrownieWiatroweLose >= elektrownieWiatroweValue) || 
+            (zuzycieEnergiLose >= zuzycieEnergiValue) || (poziomyWydobyciaLose >= poziomWydobyciaValue))
+        {
+            Lose();
+        }
+    }
+
+    private void Win()
+    {
+
+    }
+
+    private void Lose()
+    {
+
     }
 }
