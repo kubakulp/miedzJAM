@@ -104,8 +104,11 @@ public class Karta : MonoBehaviour
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi1);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia1);
         Destroy(gameObject);
-        game.CheckEndOrWin();
-        talia.LosujNowaKarte();
+        if(game.CheckEndOrWin()==false)
+        {
+            talia.LosujNowaKarte();
+        }
+
         if(budujePub==true)
         {
             game.istniejePub = true;
@@ -127,8 +130,10 @@ public class Karta : MonoBehaviour
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi2);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia2);
         Destroy(gameObject);
-        game.CheckEndOrWin();
-        talia.LosujNowaKarte();
+        if (game.CheckEndOrWin() == false)
+        {
+            talia.LosujNowaKarte();
+        }
     }
 
     private bool Porownaj(int x, int y, int z)
