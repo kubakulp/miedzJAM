@@ -365,7 +365,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 341110e9e193b2b46950a14c62da9974, type: 3}
-  m_Color: {r: 0.7735849, g: 0.7699359, b: 0.7699359, a: 1}
+  m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -396,10 +396,10 @@ MonoBehaviour:
   opis: {fileID: 4560409511498680710}
   opis1: {fileID: 4560409509997657215}
   opis2: {fileID: 4560409510286241639}
-  PodajNazwe: Cos
-  PodajOpis: inny cos
+  PodajNazwe: tytul
+  PodajOpis: 'jakis opis '
   PodajOpis1: odpowiedz
-  PodajOpis2: inne odpowiedz
+  PodajOpis2: odpowiedz2
   miedz1: 0
   srebro1: 0
   zadowolenie1: 0
