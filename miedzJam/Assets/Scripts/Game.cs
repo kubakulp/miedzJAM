@@ -58,6 +58,8 @@ public class Game : MonoBehaviour
     public Text poziomWydobyciaText;
 
     public Talia talia;
+    public Button loseButton;
+    public Button winButton;
 
     public bool istniejePub;
 
@@ -150,7 +152,7 @@ public class Game : MonoBehaviour
         poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
     }
 
-    public void CheckEndOrWin()
+    public bool CheckEndOrWin()
     {
 
         if ((miedzWin <= miedzValue) || (srebroWin <= srebroValue) || (zadowolenieWin <= zadowolenieValue) || 
@@ -159,6 +161,7 @@ public class Game : MonoBehaviour
             (elektrownieWiatroweWin <= elektrownieWiatroweValue) || (zuzycieEnergiWin <= zuzycieEnergiValue) || (poziomyWydobyciaWin <= poziomWydobyciaValue))
         {
             Win();
+            return true;
         }
         else if ((miedzLose >= miedzValue) || (srebroLose >= srebroValue) || (zadowolenieLose >= zadowolenieValue) ||
             (energiaLose >= energiaValue) || (zanieczyszczenieLose >= zanieczyszczenieValue) ||
@@ -167,16 +170,18 @@ public class Game : MonoBehaviour
             (zuzycieEnergiLose >= zuzycieEnergiValue) || (poziomyWydobyciaLose >= poziomWydobyciaValue))
         {
             Lose();
+            return true;
         }
+        return false;
     }
 
     private void Win()
     {
-
+        winButton.gameObject.SetActive(true);
     }
 
     private void Lose()
     {
-
+        loseButton.gameObject.SetActive(true);
     }
 }
