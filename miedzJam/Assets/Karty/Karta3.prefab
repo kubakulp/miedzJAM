@@ -15,18 +15,20 @@ PrefabInstance:
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis
-      value: "Szefie, bo ch\u0142opaki si\u0119 skar\u017C\u0105, \u017Ce nie ma
-        co po pracy robi\u0107. Mo\u017Ce by tak jaki\u015B pubik otworzy\u0107?"
+      value: "Szefie, bo jutro s\u0105 moje urodziny, no i chcia\u0142em ma\u0142\u0105
+        imprezk\u0119 zrobi\u0107. Tylko ch\u0142opaki jak sobie popij\u0105 mocno,
+        to mog\u0105 nie by\u0107 w stanie p\xF3j\u015B\u0107 nast\u0119pnego dnia
+        do pracy. Co pan my\u015Bli, szefie?"
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis1
-      value: "Dobry pomys\u0142, Alfred!"
+      value: "Wszystkiego najlepszego, Alfred. Bawcie si\u0119 dobrze."
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Jak si\u0119 popij\u0105, to b\u0119dzie tylko wi\u0119cej wypadk\xF3w."
+      value: "Popi\u0107 mo\u017Cecie sobie w weekend."
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
@@ -55,18 +57,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
-      propertyPath: poziomWydobycia1
+      propertyPath: poziomWydobycia2
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
-      propertyPath: srebro2
-      value: -50
+      propertyPath: poziomWydobycia1
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 732394995502643327, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: m_Name
-      value: Karta2
+      value: Karta3
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
