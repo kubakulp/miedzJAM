@@ -84,14 +84,12 @@ PrefabInstance:
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis1
-      value: "Wszystkiego najlepszego, Alfred. Bawcie si\u0119 dobrze.  - wzrasta
-        poziom zadowolenia, kr\xF3tkoterminowo spada poziom wydobycia  "
+      value: "Wszystkiego najlepszego, Alfred. Bawcie si\u0119 dobrze. "
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Popi\u0107 mo\u017Cecie sobie w weekend. - spada poziom zadowolenia,
-        kr\xF3tkoterminowo spada poziom wydobycia"
+      value: "Popi\u0107 mo\u017Cecie sobie w weekend."
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
@@ -112,6 +110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: poziomWydobycia2
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+        type: 3}
+      propertyPath: id
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139539, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}

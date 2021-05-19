@@ -41,15 +41,12 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis1
-      value: "Dobry pomys\u0142, Alfred! - powstaje pub, znacznie wzrasta poziom
-        zadowolenia, d\u0142ugoterminowo lekko spada poziom wydobycia, odejmowany
-        jest koszt zbudowania pubu w srebrze  "
+      value: "Dobry pomys\u0142, Alfred!"
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Jak si\u0119 popij\u0105, to b\u0119dzie tylko wi\u0119cej wypadk\xF3w.
-        - Spada poziom zadowolenia"
+      value: "Jak si\u0119 popij\u0105, to b\u0119dzie tylko wi\u0119cej wypadk\xF3w. "
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}

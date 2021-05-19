@@ -78,22 +78,18 @@ PrefabInstance:
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis
-      value: "Szefie, bo jutro s\u0105 moje urodziny, no i chcia\u0142em ma\u0142\u0105
-        imprezk\u0119 zrobi\u0107. Tylko ch\u0142opaki jak sobie popij\u0105 mocno,
-        to mog\u0105 nie by\u0107 w stanie p\xF3j\u015B\u0107 nast\u0119pnego dnia
-        do pracy. Co pan my\u015Bli, szefie?  "
+      value: "Szefie, ch\u0142opaki m\xF3wi\u0105, \u017Ce chc\u0105 wi\u0119cej
+        zarabia\u0107."
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis1
-      value: "Wszystkiego najlepszego, Alfred. Bawcie si\u0119 dobrze.  - wzrasta
-        poziom zadowolenia, kr\xF3tkoterminowo spada poziom wydobycia  "
+      value: "Niech b\u0119dzie."
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Popi\u0107 mo\u017Cecie sobie w weekend. - spada poziom zadowolenia,
-        kr\xF3tkoterminowo spada poziom wydobycia"
+      value: Nie ma mowy.
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
@@ -115,10 +111,20 @@ PrefabInstance:
       propertyPath: poziomWydobycia2
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+        type: 3}
+      propertyPath: wynagrodzenie1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+        type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139539, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
       propertyPath: m_Name
-      value: Karta2
+      value: Karta3
       objectReference: {fileID: 0}
     - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
         type: 3}
