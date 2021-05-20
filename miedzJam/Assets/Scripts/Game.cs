@@ -77,7 +77,6 @@ public class Game : MonoBehaviour
         elektrownieWiatroweText.text = elektrownieWiatroweValue.ToString();
         zuzycieEnergiText.text = zuzycieEnergiValue.ToString();
         poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
-        talia.LosujNowaKarte();
     }
 
     public void ZmienIloscMiedzi(int x)

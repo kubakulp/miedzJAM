@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Talia : MonoBehaviour
 {
-    public Karta[] karty;
+    public KartaWydarzenia[] karty;
     public Game game;
 
     // Start is called before the first frame update
