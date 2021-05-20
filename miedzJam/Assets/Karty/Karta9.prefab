@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4423930011036169429
+--- !u!1001 &9192452012922771003
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,88 +10,117 @@ PrefabInstance:
     - target: {fileID: 4560409510788154856, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_Name
-      value: Karta3
+      value: Karta9
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: id
-      value: 3
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: czyUsuwanaZTali
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: iloscWTalii
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajNazwe
-      value: 'Brygadzista Alfred  '
+      value: Mechanik Anastazja
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis
-      value: "Szefie, ch\u0142opaki m\xF3wi\u0105, \u017Ce chc\u0105 wi\u0119cej
-        zarabia\u0107."
+      value: "Szefie, fabryka robot\xF3w wymaga napraw."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis1
-      value: "Niech b\u0119dzie."
+      value: "Tak nie mo\u017Ce by\u0107, trzeba si\u0119 tym natychmiast zaj\u0105\u0107.."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis2
-      value: Nie ma mowy.
+      value: Jeszcze wytrzyma.
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: zadowolenie1
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
-        type: 3}
-      propertyPath: wynagrodzenie1
-      value: 5
+      propertyPath: srebro1
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: poziomWydobycia1
-      value: -1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: zadowolenie1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: zadowolenie2
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: poziomWydobycia2
-      value: -1
+      propertyPath: gornicy1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: nazwa
-      value: 
-      objectReference: {fileID: 156817493753170863}
+      propertyPath: roboty2
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: opis
-      value: 
-      objectReference: {fileID: 156817493995896147}
+      propertyPath: iloscGornikowWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: opis1
-      value: 
-      objectReference: {fileID: 156817495783180458}
+      propertyPath: iloscRobotowWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: opis2
-      value: 
-      objectReference: {fileID: 156817495501347762}
+      propertyPath: roboty1
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: iloscZadowoleniaMniejszaNiz
-      value: 50
+      propertyPath: srebro2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: elektrownieWeglowe1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: miedz2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: elektrownieWiatrowe2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscEnergiMniejszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: miedz1
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -150,51 +179,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61250440d489dc34c8ac5513c0ccfa7e, type: 3}
---- !u!114 &156817495783180458 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4560409509997657215, guid: 61250440d489dc34c8ac5513c0ccfa7e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4423930011036169429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &156817495501347762 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4560409510286241639, guid: 61250440d489dc34c8ac5513c0ccfa7e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4423930011036169429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &156817493753170863 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4560409511759298426, guid: 61250440d489dc34c8ac5513c0ccfa7e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4423930011036169429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &156817493995896147 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4560409511498680710, guid: 61250440d489dc34c8ac5513c0ccfa7e,
-    type: 3}
-  m_PrefabInstance: {fileID: 4423930011036169429}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
