@@ -19,12 +19,17 @@ public class Buttons : MonoBehaviour
 
     public void Game()
     {
-        animatorTla.Play("animacjaTla");
-        animatorZebatki1.Play("animacjaZebatka");
-        animatorZebatki2.Play("animacjaZebatka");
-        animatorPanelMenu.Play("animacjaPanelMenu");
-        animatorStatystyki.Play("animacjaStatystyki");
-        talia.LosujNowaKarte();
+        if(this.enabled==true)
+        {
+            animatorTla.Play("animacjaTla");
+            animatorZebatki1.Play("animacjaZebatka");
+            animatorZebatki2.Play("animacjaZebatka");
+            animatorPanelMenu.Play("animacjaPanelMenu");
+            animatorStatystyki.Play("animacjaStatystyki");
+            talia.LosujNowaKarte();
+        }
+
+        this.enabled = false;
     }
 
     public void Tworcy()
@@ -43,6 +48,11 @@ public class Buttons : MonoBehaviour
     }
 
     public void Settings()
+    {
+
+    }
+
+    public void ZagrajJeszczeRaz()
     {
 
     }

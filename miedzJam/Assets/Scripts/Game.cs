@@ -58,7 +58,7 @@ public class Game : MonoBehaviour
     public Text poziomWydobyciaText;
 
     public Talia talia;
-    public Button loseButton;
+    public GameObject lose;
     public Button winButton;
 
     public bool istniejePub;
@@ -181,6 +181,6 @@ public class Game : MonoBehaviour
 
     private void Lose()
     {
-        loseButton.gameObject.SetActive(true);
+        lose.gameObject.SetActive(true);
     }
 }
