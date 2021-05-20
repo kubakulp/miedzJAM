@@ -314,8 +314,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4560409510788154856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27, y: 22, z: 0}
-  m_LocalScale: {x: 319.65588, y: 367.10495, z: 1}
+  m_LocalPosition: {x: -300, y: -200, z: 0}
+  m_LocalScale: {x: 319.65588, y: 367.10495, z: -1}
   m_Children:
   - {fileID: 4560409511929313445}
   - {fileID: 4560409510583299724}
@@ -343,7 +343,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -424,6 +424,32 @@ MonoBehaviour:
   elektrownieWiatrowe2: 0
   zuzycieEnergi2: 0
   poziomWydobycia2: 0
+  iloscMiedziWiekszaNiz: 0
+  iloscMiedziMniejszaNiz: 0
+  iloscSrebraWiekszaNiz: 0
+  iloscSrebraMniejszaNiz: 0
+  iloscZadowoleniaWiekszaNiz: 0
+  iloscZadowoleniaMniejszaNiz: 0
+  iloscEnergiWiekszaNiz: 0
+  iloscEnergiMniejszaNiz: 0
+  iloscZanieczyszczeniaWiekszaNiz: 0
+  iloscZanieczyszczeniaMniejszaNiz: 0
+  iloscGornikowWiekszaNiz: 0
+  iloscGornikowMniejszaNiz: 0
+  iloscRobotowWiekszaNiz: 0
+  iloscRobotowMniejszaNiz: 0
+  iloscWynagrodzeniaWiekszaNiz: 0
+  iloscWynagrodzeniaMniejszaNiz: 0
+  iloscElektrowniWeglowychWiekszaNiz: 0
+  iloscElektrowniWeglowychMniejszaNiz: 0
+  iloscElektrowniWiatrowychWiekszaNiz: 0
+  iloscElektrowniWiatrowychMniejszaNiz: 0
+  iloscZuzyciaEnergiWiekszaNiz: 0
+  iloscZuzyciaEnergiMniejszaNiz: 0
+  wymaganyPoziomWydobyciaWiekszyNiz: 0
+  wymaganyPoziomWydobyciaMniejszyNiz: 0
+  wymagaPubu: 0
+  budujePub: 0
 --- !u!1 &4560409511011893006
 GameObject:
   m_ObjectHideFlags: 0

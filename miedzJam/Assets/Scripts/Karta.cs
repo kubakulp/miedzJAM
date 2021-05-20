@@ -80,7 +80,6 @@ public class Karta : MonoBehaviour
 
     private void Start()
     {
-        transform.position = new Vector3(430, 300, 0);
         nazwa.text = PodajNazwe;
         opis.text = PodajOpis;
         opis1.text = PodajOpis1;
