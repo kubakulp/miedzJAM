@@ -1,79 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4127292674831063313
+--- !u!1001 &3484890029161946511
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: PodajNazwe
-      value: Brygadzista Alfred
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: PodajOpis
-      value: "Szefie, bo ch\u0142opaki si\u0119 skar\u017C\u0105, \u017Ce nie ma
-        co po pracy robi\u0107. Mo\u017Ce by tak jaki\u015B pubik otworzy\u0107?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: PodajOpis1
-      value: "Dobry pomys\u0142, Alfred!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: PodajOpis2
-      value: "Jak si\u0119 popij\u0105, to b\u0119dzie tylko wi\u0119cej wypadk\xF3w."
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: miedz1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: srebro1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: zadowolenie1
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: zadowolenie2
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: id
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: poziomWydobycia1
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643326, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: srebro2
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 732394995502643327, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154856, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_Name
       value: Karta2
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscWTalii
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajNazwe
       value: 'Brygadzista Alfred  '
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis
       value: "Szefie, bo jutro s\u0105 moje urodziny, no i chcia\u0142em ma\u0142\u0105
@@ -81,100 +35,163 @@ PrefabInstance:
         to mog\u0105 nie by\u0107 w stanie p\xF3j\u015B\u0107 nast\u0119pnego dnia
         do pracy. Co pan my\u015Bli, szefie?  "
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis1
       value: "Wszystkiego najlepszego, Alfred. Bawcie si\u0119 dobrze. "
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis2
       value: "Popi\u0107 mo\u017Cecie sobie w weekend."
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
-        type: 3}
-      propertyPath: srebro1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: zadowolenie1
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: poziomWydobycia1
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: zadowolenie2
       value: -3
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: poziomWydobycia2
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139538, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: id
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139539, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+      propertyPath: nazwa
+      value: 
+      objectReference: {fileID: 1086780715494154997}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: m_Name
-      value: Karta2
+      propertyPath: opis
+      value: 
+      objectReference: {fileID: 1086780715201106953}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: opis1
+      value: 
+      objectReference: {fileID: 1086780713430589936}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: opis2
+      value: 
+      objectReference: {fileID: 1086780713745986280}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: wymagaPubu
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -300
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -200
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673595323443139540, guid: 07d88d8c46d935e488aa86b7df66ae6d,
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07d88d8c46d935e488aa86b7df66ae6d, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 61250440d489dc34c8ac5513c0ccfa7e, type: 3}
+--- !u!114 &1086780713430589936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4560409509997657215, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3484890029161946511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086780713745986280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4560409510286241639, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3484890029161946511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086780715494154997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4560409511759298426, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3484890029161946511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086780715201106953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4560409511498680710, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3484890029161946511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
