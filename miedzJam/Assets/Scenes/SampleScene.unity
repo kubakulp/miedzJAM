@@ -2127,29 +2127,10 @@ MonoBehaviour:
   zuzycieEnergiValue: 30
   poziomWydobyciaValue: 30
   miedzWin: 100000
-  srebroWin: 100000
-  zadowolenieWin: 100000
-  energiaWin: 100000
-  zanieczyszczenieWin: 0
-  gornicyWin: 100000
-  robotyWin: 100000
-  wynagrodzenieWin: 100000
-  elektrownieWegloweWin: 100000
-  elektrownieWiatroweWin: 100000
-  zuzycieEnergiWin: 100000
-  poziomyWydobyciaWin: 100000
-  miedzLose: 0
   srebroLose: 0
   zadowolenieLose: 0
   energiaLose: 0
   zanieczyszczenieLose: 10000
-  gornicyLose: 0
-  robotyLose: 0
-  wynagrodzenieLose: 0
-  elektrownieWegloweLose: 0
-  elektrownieWiatroweLose: 0
-  zuzycieEnergiLose: 0
-  poziomyWydobyciaLose: 0
   miedzText: {fileID: 650766752}
   srebroText: {fileID: 691623426}
   zadowolenieText: {fileID: 786130670}
@@ -2164,6 +2145,7 @@ MonoBehaviour:
   poziomWydobyciaText: {fileID: 525815626}
   talia: {fileID: 747368916}
   lose: {fileID: 1526224424}
+  loseText: {fileID: 1932238947}
   winButton: {fileID: 1784685655}
   istniejePub: 0
   przyjetoGornikowZA12: 0

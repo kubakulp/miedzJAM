@@ -19,30 +19,10 @@ public class Game : MonoBehaviour
     public int poziomWydobyciaValue;
 
     public int miedzWin;
-    public int srebroWin;
-    public int zadowolenieWin;
-    public int energiaWin;
-    public int zanieczyszczenieWin;
-    public int gornicyWin;
-    public int robotyWin;
-    public int wynagrodzenieWin;
-    public int elektrownieWegloweWin;
-    public int elektrownieWiatroweWin;
-    public int zuzycieEnergiWin;
-    public int poziomyWydobyciaWin;
-
-    public int miedzLose;
     public int srebroLose;
     public int zadowolenieLose;
     public int energiaLose;
     public int zanieczyszczenieLose;
-    public int gornicyLose;
-    public int robotyLose;
-    public int wynagrodzenieLose;
-    public int elektrownieWegloweLose;
-    public int elektrownieWiatroweLose;
-    public int zuzycieEnergiLose;
-    public int poziomyWydobyciaLose;
 
     public Text miedzText;
     public Text srebroText;
@@ -59,6 +39,7 @@ public class Game : MonoBehaviour
 
     public Talia talia;
     public GameObject lose;
+    public Text loseText;
     public Button winButton;
 
     public bool istniejePub;
@@ -175,19 +156,12 @@ public class Game : MonoBehaviour
     public bool CheckEndOrWin()
     {
 
-        if ((miedzWin <= miedzValue) || (srebroWin <= srebroValue) || (zadowolenieWin <= zadowolenieValue) || 
-            (energiaWin <= energiaValue) || (zanieczyszczenieWin >= zanieczyszczenieValue) || (gornicyWin <= gornicyValue) ||
-            (robotyWin <= robotyValue) || (wynagrodzenieWin <= wynagrodzenieValue) || (elektrownieWegloweWin <= elektrownieWegloweValue) || 
-            (elektrownieWiatroweWin <= elektrownieWiatroweValue) || (zuzycieEnergiWin <= zuzycieEnergiValue) || (poziomyWydobyciaWin <= poziomWydobyciaValue))
+        if (miedzWin <= miedzValue)
         {
             Win();
             return true;
         }
-        else if ((miedzLose >= miedzValue) || (srebroLose >= srebroValue) || (zadowolenieLose >= zadowolenieValue) ||
-            (energiaLose >= energiaValue) || (zanieczyszczenieLose <= zanieczyszczenieValue) ||
-            (gornicyLose >= gornicyValue) || (robotyLose >= robotyValue) || (wynagrodzenieLose >= wynagrodzenieValue) || 
-            (elektrownieWegloweLose >= elektrownieWegloweValue) || (elektrownieWiatroweLose >= elektrownieWiatroweValue) || 
-            (zuzycieEnergiLose >= zuzycieEnergiValue) || (poziomyWydobyciaLose >= poziomWydobyciaValue))
+        else if ((srebroLose >= srebroValue) || (zadowolenieLose >= zadowolenieValue) || (energiaLose >= energiaValue) || (zanieczyszczenieLose <= zanieczyszczenieValue))
         {
             Lose();
             return true;
@@ -202,6 +176,21 @@ public class Game : MonoBehaviour
 
     private void Lose()
     {
+        if(srebroLose >= srebroValue)
+        {
+            loseText.text = "Masz za mało srebra, żeby opłacić górników";
+        }else if(zadowolenieLose>=zadowolenieValue)
+        {
+            loseText.text = "Górnicy buntują się przeciwko warunkom pracy";
+        }
+        else if(energiaLose>=energiaValue)
+        {
+            loseText.text = "Nie masz dość energii, żeby kontynuować wydobycie";
+        }
+        else if(zanieczyszczenieLose <= zanieczyszczenieValue)
+        {
+            loseText.text = "Poziom zanieczyszczenia jest zbyt wysoki";
+        }
         lose.gameObject.SetActive(true);
     }
 
