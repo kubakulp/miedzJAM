@@ -10,12 +10,15 @@ public class Talia : MonoBehaviour
     public int licznikKart;
     public int coIleKartJestMiesiac;
     private bool[] usunieta;
+    private KartaWydarzenia[] prawdziwaTalia;
+    private int licznik = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        prawdziwaTalia = new KartaWydarzenia[20000];
         UstawTalie();
-        usunieta = new bool[karty.Length];
+        usunieta = new bool[prawdziwaTalia.Length];
     }
 
     public void LosujNowaKarte()
@@ -31,15 +34,15 @@ public class Talia : MonoBehaviour
             }
             else
             {
-                int random = Random.Range(0, karty.Length);
+                int random = Random.Range(0, licznik);
                 if(usunieta[random]==false)
                 {
-                    if (karty[random].CzyMozliwa(game) == true)
+                    if (prawdziwaTalia[random].CzyMozliwa(game) == true)
                     {
-                        var myNewSmoke = Instantiate(karty[random], transform);
+                        var myNewSmoke = Instantiate(prawdziwaTalia[random], transform);
                         myNewSmoke.transform.parent = gameObject.transform;
 
-                        if (karty[random].czyUsuwanaZTali == true)
+                        if (prawdziwaTalia[random].czyUsuwanaZTali == true)
                         {
                             usunieta[random] = true;
                         }
@@ -53,6 +56,13 @@ public class Talia : MonoBehaviour
 
     void UstawTalie()
     {
-                
+        for(int i=0; i<karty.Length; i++)
+        {
+            for(int j=0; j<karty[i].iloscWTalii; j++)
+            {
+                prawdziwaTalia[licznik] = karty[i];
+                licznik++;
+            }
+        }
     }
 }

@@ -113,6 +113,11 @@ PrefabInstance:
       propertyPath: roboty2
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154862, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: m_LocalPosition.x

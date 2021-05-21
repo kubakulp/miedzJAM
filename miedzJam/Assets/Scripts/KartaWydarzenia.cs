@@ -161,7 +161,7 @@ public class KartaWydarzenia : MonoBehaviour
                                                 {
                                                     if (Porownaj(game.poziomWydobyciaValue, wymaganyPoziomWydobyciaMniejszyNiz, wymaganyPoziomWydobyciaWiekszyNiz) == true)
                                                     {
-                                                        if ((wymagaPubu == true && game.istniejePub == true) || wymagaPubu == false)
+                                                        /*if (wymagaPubu == true && game.istniejePub == true)
                                                         {
                                                             return true;
                                                         }
@@ -170,8 +170,8 @@ public class KartaWydarzenia : MonoBehaviour
                                                         {
                                                             return true;
                                                         }
-
-                                                        return false;
+                                                        */
+                                                        return true;
                                                     }
                                                     else
                                                     {
