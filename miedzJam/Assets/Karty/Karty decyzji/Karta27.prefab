@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9192452012922771003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4560409510788154856, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_Name
+      value: Karta27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: id
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: czyUsuwanaZTali
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscWTalii
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: PodajNazwe
+      value: Mechanik Anastazja
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: PodajOpis
+      value: "Szefie, mam namiar na dodatkowe \u017Ar\xF3d\u0142o w\u0119gla, mo\u017Cemy
+        wygenerowa\u0107 jednorazowo wi\u0119cej energii, ale to b\u0119dzie kosztowa\u0107."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: PodajOpis1
+      value: "Zr\xF3bmy to."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: PodajOpis2
+      value: "Nie mamy na to teraz pieni\u0119dzy."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: srebro1
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: poziomWydobycia1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: zadowolenie1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: zadowolenie2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: gornicy1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: roboty2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscGornikowWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscRobotowWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: roboty1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: srebro2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: elektrownieWeglowe1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: miedz2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: elektrownieWiatrowe2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscEnergiMniejszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: zanieczyszczenie1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscZanieczyszczeniaWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: energia1
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscElektrowniWiatrowychWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscElektrowniWeglowychWiekszaNiz
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 61250440d489dc34c8ac5513c0ccfa7e, type: 3}
