@@ -6,6 +6,8 @@ public class Talia : MonoBehaviour
 {
     public KartaWydarzenia[] karty;
     public Game game;
+    public int licznikKart;
+    public int coIleKartJestMiesiac;
 
     // Start is called before the first frame update
     void Start()

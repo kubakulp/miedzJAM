@@ -86,8 +86,16 @@ public class KartaWydarzenia : MonoBehaviour
         Destroy(gameObject);
         if (game.CheckEndOrWin() == false)
         {
+            talia.licznikKart++;
+            if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
+            {
+                game.Miesiac();
+            }
             talia.LosujNowaKarte();
         }
+        game.WyswietlWynagrodzenie();
+        game.WyswietlPoziomWydobycia();
+        game.WyswietlZuzycieEnergii();
 
         if (budujePub == true)
         {

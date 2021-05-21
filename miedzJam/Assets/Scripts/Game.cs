@@ -62,6 +62,7 @@ public class Game : MonoBehaviour
     public Button winButton;
 
     public bool istniejePub;
+    private float pomPoziomWydobycia;
 
     private void Start()
     {
@@ -72,11 +73,13 @@ public class Game : MonoBehaviour
         zanieczyszczenieText.text = zanieczyszczenieValue.ToString();
         gornicyText.text = gornicyValue.ToString();
         robotyText.text = robotyValue.ToString();
-        wynagrodzenieText.text = wynagrodzenieValue.ToString();
         elektrownieWegloweText.text = elektrownieWegloweValue.ToString();
         elektrownieWiatroweText.text = elektrownieWiatroweValue.ToString();
         zuzycieEnergiText.text = zuzycieEnergiValue.ToString();
         poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
+        WyswietlWynagrodzenie();
+        WyswietlPoziomWydobycia();
+        WyswietlZuzycieEnergii();
     }
 
     public void ZmienIloscMiedzi(int x)
@@ -124,7 +127,6 @@ public class Game : MonoBehaviour
     public void ZmienIloscWynagrodzenia(int x)
     {
         wynagrodzenieValue = wynagrodzenieValue + x;
-        wynagrodzenieText.text = wynagrodzenieValue.ToString();
     }
 
     public void ZmienIloscElektrowniWeglowych(int x)
@@ -149,6 +151,22 @@ public class Game : MonoBehaviour
     {
         poziomWydobyciaValue = poziomWydobyciaValue + x;
         poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
+    }
+
+    public void WyswietlWynagrodzenie()
+    {
+        wynagrodzenieText.text = (wynagrodzenieValue*gornicyValue).ToString();
+    }
+
+    public void WyswietlPoziomWydobycia()
+    {
+        poziomWydobyciaText.text = ((15 * robotyValue) + (poziomWydobyciaValue * gornicyValue)).ToString();
+        pomPoziomWydobycia = (15 * robotyValue) + (poziomWydobyciaValue * gornicyValue);
+    }
+
+    public void WyswietlZuzycieEnergii()
+    {
+        zuzycieEnergiText.text = ((10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue)).ToString();
     }
 
     public bool CheckEndOrWin()
@@ -182,5 +200,21 @@ public class Game : MonoBehaviour
     private void Lose()
     {
         lose.gameObject.SetActive(true);
+    }
+
+    public void Miesiac()
+    {
+        int pom = 0;
+        int x = (int)(pomPoziomWydobycia * 2)/ 3;
+        if(x != (pomPoziomWydobycia * 2)/ 3)
+        {
+            pom = 1;
+        }
+        ZmienIloscSrebra(x+pom);
+        ZmienIloscMiedzi((int)(pomPoziomWydobycia/3));
+        ZmienIloscEnergii((80*elektrownieWegloweValue)+(60*elektrownieWiatroweValue));
+        ZmienIloscZanieczyszczenia(10*elektrownieWegloweValue);
+        ZmienIloscEnergii(-zuzycieEnergiValue);
+        ZmienIloscSrebra(-(wynagrodzenieValue * gornicyValue));
     }
 }

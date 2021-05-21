@@ -51,8 +51,16 @@ public class Karta : KartaWydarzenia
         Destroy(gameObject);
         if (game.CheckEndOrWin() == false)
         {
+            talia.licznikKart++;
+            if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
+            {
+                game.Miesiac();
+            }
             talia.LosujNowaKarte();
         }
+        game.WyswietlWynagrodzenie();
+        game.WyswietlPoziomWydobycia();
+        game.WyswietlZuzycieEnergii();
     }
 
     private bool Porownaj(int x, int y, int z)

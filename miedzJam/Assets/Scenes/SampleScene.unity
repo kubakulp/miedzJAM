@@ -1442,6 +1442,8 @@ MonoBehaviour:
   - {fileID: 4673595323443139538, guid: 60812b494c3ec634b80ea4e41e5c0e71, type: 3}
   - {fileID: 4673595323443139538, guid: a165fd22c0c7d5240a27c17f7b012f1c, type: 3}
   game: {fileID: 925579770}
+  licznikKart: 0
+  coIleKartJestMiesiac: 2
 --- !u!4 &747368917
 Transform:
   m_ObjectHideFlags: 0
@@ -2112,10 +2114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2adb6eb5c97275f46902e39fcb5e5845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miedzValue: 30
-  srebroValue: 30
+  miedzValue: 1000
+  srebroValue: 1000
   zadowolenieValue: 30
-  energiaValue: 30
+  energiaValue: 1000
   zanieczyszczenieValue: 30
   gornicyValue: 30
   robotyValue: 30
@@ -2124,10 +2126,10 @@ MonoBehaviour:
   elektrownieWiatroweValue: 30
   zuzycieEnergiValue: 30
   poziomWydobyciaValue: 30
-  miedzWin: 100
-  srebroWin: 100
+  miedzWin: 10000
+  srebroWin: 10000
   zadowolenieWin: 100
-  energiaWin: 100
+  energiaWin: 10000
   zanieczyszczenieWin: 100
   gornicyWin: 100
   robotyWin: 100
@@ -2343,8 +2345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.05}
-  m_SizeDelta: {x: 210, y: 30}
+  m_AnchoredPosition: {x: 0.011, y: 0.05}
+  m_SizeDelta: {x: 209.2926, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036688174
 MonoBehaviour:
@@ -2731,8 +2733,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.9}
-  m_SizeDelta: {x: 210, y: 30}
+  m_AnchoredPosition: {x: 0.053, y: -0.9}
+  m_SizeDelta: {x: 206.46317, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235910564
 MonoBehaviour:
@@ -4658,8 +4660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.85}
-  m_SizeDelta: {x: 210, y: 30}
+  m_AnchoredPosition: {x: -0.001, y: -1.85}
+  m_SizeDelta: {x: 210.00003, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144706305
 MonoBehaviour:
