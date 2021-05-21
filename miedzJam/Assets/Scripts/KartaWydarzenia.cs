@@ -84,18 +84,18 @@ public class KartaWydarzenia : MonoBehaviour
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi1);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia1);
         Destroy(gameObject);
-        if (game.CheckEndOrWin() == false)
+        talia.licznikKart++;
+        if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
         {
-            talia.licznikKart++;
-            if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
-            {
-                game.Miesiac();
-            }
-            talia.LosujNowaKarte();
+            game.Miesiac();
         }
         game.WyswietlWynagrodzenie();
         game.WyswietlPoziomWydobycia();
         game.WyswietlZuzycieEnergii();
+        if (game.CheckEndOrWin() == false)
+        {
+            talia.LosujNowaKarte();
+        }
 
         if (budujePub == true)
         {
