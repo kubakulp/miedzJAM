@@ -90,8 +90,8 @@ public class Game : MonoBehaviour
 
     public void ZmienIloscSrebra(int x)
     {
-        srebroValue = srebroValue + x;
-        srebroText.text = srebroValue.ToString();
+        miedzValue = miedzValue + x;
+        miedzText.text = miedzValue.ToString();
     }
 
     public void ZmienIloscZadowolenia(int x)
@@ -205,16 +205,16 @@ public class Game : MonoBehaviour
     public void Miesiac()
     {
         int pom = 0;
-        int x = (int)(pomPoziomWydobycia * 2)/ 3;
-        if(x != (pomPoziomWydobycia * 2)/ 3)
+        int x = (int)(pomPoziomWydobycia * 0.666f);
+        if(x != (pomPoziomWydobycia * 0.666f))
         {
             pom = 1;
         }
         ZmienIloscSrebra(x+pom);
-        ZmienIloscMiedzi((int)(pomPoziomWydobycia/3));
+        ZmienIloscMiedzi((int)(pomPoziomWydobycia*0.334f));
         ZmienIloscEnergii((80*elektrownieWegloweValue)+(60*elektrownieWiatroweValue));
         ZmienIloscZanieczyszczenia(10*elektrownieWegloweValue);
-        ZmienIloscEnergii(-zuzycieEnergiValue);
+        ZmienIloscEnergii(-(10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue));
         ZmienIloscSrebra(-(wynagrodzenieValue * gornicyValue));
     }
 }
