@@ -123,7 +123,7 @@ public class KartaWydarzenia : MonoBehaviour
         }
     }
 
-    private bool Porownaj(int x, int y, int z)
+    private bool Porownaj(int x, int z, int y)
     {
         if (x >= y && (x <= z || z == 0))
         {

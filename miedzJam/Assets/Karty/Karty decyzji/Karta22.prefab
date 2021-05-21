@@ -52,7 +52,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: srebro1
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -103,6 +103,21 @@ PrefabInstance:
         type: 3}
       propertyPath: gornicy2
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: idNastepnejKartyOpcja1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: budujePub
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: budujeMaszyneDoProdukcjiRobotow
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}

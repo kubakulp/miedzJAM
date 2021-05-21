@@ -13,7 +13,7 @@ public class Talia : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UstawTalie();
     }
 
     public void LosujNowaKarte()
@@ -34,6 +34,12 @@ public class Talia : MonoBehaviour
                 {
                     var myNewSmoke = Instantiate(karty[random], transform);
                     myNewSmoke.transform.parent = gameObject.transform;
+
+                    if(karty[random].czyUsuwanaZTali == true)
+                    {
+                        UsunKarte(random, karty);
+                    }
+
                     break;
                 }
             }
@@ -42,6 +48,24 @@ public class Talia : MonoBehaviour
 
     void UstawTalie()
     {
-        
+                
     }
+
+    void UsunKarte(int x, KartaWydarzenia[] karty)
+    {
+        int licznik = 0;
+        int licznik2 = 0;
+        KartaWydarzenia[] karty1 = new KartaWydarzenia[karty.Length-1];
+        foreach( KartaWydarzenia k in karty)
+        {
+            if(x!=licznik)
+            {
+                karty1[licznik2] = karty[licznik];
+                licznik2++;
+            }
+            licznik++;
+        }
+        karty = karty1;
+    }
+
 }
