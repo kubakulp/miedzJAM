@@ -173,7 +173,7 @@ public class Game : MonoBehaviour
     {
 
         if ((miedzWin <= miedzValue) || (srebroWin <= srebroValue) || (zadowolenieWin <= zadowolenieValue) || 
-            (energiaWin <= energiaValue) || (zanieczyszczenieWin <= zanieczyszczenieValue) || (gornicyWin <= gornicyValue) ||
+            (energiaWin <= energiaValue) || (zanieczyszczenieWin >= zanieczyszczenieValue) || (gornicyWin <= gornicyValue) ||
             (robotyWin <= robotyValue) || (wynagrodzenieWin <= wynagrodzenieValue) || (elektrownieWegloweWin <= elektrownieWegloweValue) || 
             (elektrownieWiatroweWin <= elektrownieWiatroweValue) || (zuzycieEnergiWin <= zuzycieEnergiValue) || (poziomyWydobyciaWin <= poziomWydobyciaValue))
         {
@@ -181,7 +181,7 @@ public class Game : MonoBehaviour
             return true;
         }
         else if ((miedzLose >= miedzValue) || (srebroLose >= srebroValue) || (zadowolenieLose >= zadowolenieValue) ||
-            (energiaLose >= energiaValue) || (zanieczyszczenieLose >= zanieczyszczenieValue) ||
+            (energiaLose >= energiaValue) || (zanieczyszczenieLose <= zanieczyszczenieValue) ||
             (gornicyLose >= gornicyValue) || (robotyLose >= robotyValue) || (wynagrodzenieLose >= wynagrodzenieValue) || 
             (elektrownieWegloweLose >= elektrownieWegloweValue) || (elektrownieWiatroweLose >= elektrownieWiatroweValue) || 
             (zuzycieEnergiLose >= zuzycieEnergiValue) || (poziomyWydobyciaLose >= poziomWydobyciaValue))
