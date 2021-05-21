@@ -62,6 +62,9 @@ public class Game : MonoBehaviour
     public Button winButton;
 
     public bool istniejePub;
+    public bool przyjetoGornikowZA12;
+    public bool maszynaDoProdukcjiRobotow;
+
     private float pomPoziomWydobycia;
 
     private void Start()
@@ -90,8 +93,8 @@ public class Game : MonoBehaviour
 
     public void ZmienIloscSrebra(int x)
     {
-        miedzValue = miedzValue + x;
-        miedzText.text = miedzValue.ToString();
+        srebroValue = srebroValue + x;
+        srebroText.text = srebroValue.ToString();
     }
 
     public void ZmienIloscZadowolenia(int x)

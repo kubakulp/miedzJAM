@@ -57,9 +57,19 @@ public class KartaWydarzenia : MonoBehaviour
     public int iloscZuzyciaEnergiMniejszaNiz;
     public int wymaganyPoziomWydobyciaWiekszyNiz;
     public int wymaganyPoziomWydobyciaMniejszyNiz;
-    public bool wymagaPubu;
 
+    //Warunki wydarzen
+    public bool wymagaPubu;
     public bool budujePub;
+
+    public bool przyjecieGornikowZA12;
+    public bool przyjetoGornikowZA12;
+    public bool zabranoGornikow;
+
+    public bool budujeMaszyneDoProdukcjiRobotow;
+    public bool maszynaDoRobotowJestPopsuta;
+    public bool wymagaMaszynaDoProdukcjiRobotow;
+    public bool maszynaDoRobotowSiePsuje;
 
     private void Start()
     {
@@ -100,6 +110,16 @@ public class KartaWydarzenia : MonoBehaviour
         if (budujePub == true)
         {
             game.istniejePub = true;
+        }
+
+        if(przyjecieGornikowZA12==true)
+        {
+            game.przyjetoGornikowZA12 = true;
+        }
+
+        if(zabranoGornikow==true)
+        {
+            game.przyjetoGornikowZA12 = false;
         }
     }
 
@@ -147,7 +167,14 @@ public class KartaWydarzenia : MonoBehaviour
                                                         }
                                                         else
                                                         {
-                                                            return false;
+                                                            if((game.przyjetoGornikowZA12 == true && przyjecieGornikowZA12 == true) || przyjetoGornikowZA12 == false)
+                                                            {
+                                                                return true;
+                                                            }
+                                                            else
+                                                            {
+                                                                return false;                                                                
+                                                            }
                                                         }
                                                     }
                                                     else

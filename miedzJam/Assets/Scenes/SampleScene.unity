@@ -2130,7 +2130,7 @@ MonoBehaviour:
   srebroWin: 100000
   zadowolenieWin: 100000
   energiaWin: 100000
-  zanieczyszczenieWin: 100000
+  zanieczyszczenieWin: 0
   gornicyWin: 100000
   robotyWin: 100000
   wynagrodzenieWin: 100000
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   srebroLose: 0
   zadowolenieLose: 0
   energiaLose: 0
-  zanieczyszczenieLose: 0
+  zanieczyszczenieLose: 10000
   gornicyLose: 0
   robotyLose: 0
   wynagrodzenieLose: 0
@@ -2166,6 +2166,8 @@ MonoBehaviour:
   lose: {fileID: 1526224424}
   winButton: {fileID: 1784685655}
   istniejePub: 0
+  przyjetoGornikowZA12: 0
+  maszynaDoProdukcjiRobotow: 0
 --- !u!4 &925579771
 Transform:
   m_ObjectHideFlags: 0
