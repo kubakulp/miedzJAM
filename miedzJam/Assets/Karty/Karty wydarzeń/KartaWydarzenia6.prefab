@@ -7,10 +7,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: PodajNazwe
+      value: Brygadzista Alfred
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: PodajOpis
+      value: "Szefie, to nie duch, to jeden z ch\u0142opak\xF3w robi\u0142 sobie
+        \u017Carty. Pozwoli\u0142em sobie go zwolni\u0107."
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: gornicy1
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: czyUsuwanaZTali
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: id
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: miedz1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: zadowolenie1
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 739033464362469027, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
       propertyPath: m_Name
-      value: KartaWyboru1
+      value: KartaWydarzenia6
       objectReference: {fileID: 0}
     - target: {fileID: 739033464362469028, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
