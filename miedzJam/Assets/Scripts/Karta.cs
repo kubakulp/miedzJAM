@@ -23,6 +23,7 @@ public class Karta : KartaWydarzenia
     public int elektrownieWiatrowe2;
     public int zuzycieEnergi2;
     public int poziomWydobycia2;
+    public int idNastepnejKartyOpcja2;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class Karta : KartaWydarzenia
 
     public void OpcjaB()
     {
+        game.idNastepnejKarty = idNastepnejKartyOpcja2;
         game.ZmienIloscMiedzi(miedz2);
         game.ZmienIloscSrebra(srebro2);
         game.ZmienIloscZadowolenia(zadowolenie2);

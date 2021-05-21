@@ -5,6 +5,7 @@ using UnityEngine;
 public class Talia : MonoBehaviour
 {
     public KartaWydarzenia[] karty;
+    public KartaWydarzenia[] pojedynczeKarty;
     public Game game;
     public int licznikKart;
     public int coIleKartJestMiesiac;
@@ -19,13 +20,22 @@ public class Talia : MonoBehaviour
     {
         while(1==1)
         {
-            int random = Random.Range(0, karty.Length);
-
-            if(karty[random].CzyMozliwa(game)==true)
-            { 
-                var myNewSmoke = Instantiate(karty[random], transform);
+            if(game.idNastepnejKarty!=0)
+            {
+                var myNewSmoke = Instantiate(pojedynczeKarty[game.idNastepnejKarty-1], transform);
                 myNewSmoke.transform.parent = gameObject.transform;
+                game.idNastepnejKarty = 0;
                 break;
+            }
+            else
+            {
+                int random = Random.Range(0, karty.Length);
+                if (karty[random].CzyMozliwa(game) == true)
+                {
+                    var myNewSmoke = Instantiate(karty[random], transform);
+                    myNewSmoke.transform.parent = gameObject.transform;
+                    break;
+                }
             }
         }
     }

@@ -8,7 +8,6 @@ public class KartaWydarzenia : MonoBehaviour
     public Game game;
     public Talia talia;
 
-    public int id;
     public int iloscWTalii;
     public bool czyUsuwanaZTali;
 
@@ -31,6 +30,7 @@ public class KartaWydarzenia : MonoBehaviour
     public int elektrownieWiatrowe1;
     public int zuzycieEnergi1;
     public int poziomWydobycia1;
+    public int idNastepnejKartyOpcja1;
 
     //Warunki//
     public int iloscMiedziWiekszaNiz;
@@ -62,9 +62,8 @@ public class KartaWydarzenia : MonoBehaviour
     public bool wymagaPubu;
     public bool budujePub;
 
-    public bool przyjecieGornikowZA12;
-    public bool przyjetoGornikowZA12;
-    public bool zabranoGornikow;
+    public bool przekierowanieGornikow;
+    public bool zabranieGornikow;
 
     public bool budujeMaszyneDoProdukcjiRobotow;
     public bool maszynaDoRobotowJestPopsuta;
@@ -81,6 +80,7 @@ public class KartaWydarzenia : MonoBehaviour
 
     public void OpcjaA()
     {
+        game.idNastepnejKarty = idNastepnejKartyOpcja1;
         game.ZmienIloscMiedzi(miedz1);
         game.ZmienIloscSrebra(srebro1);
         game.ZmienIloscZadowolenia(zadowolenie1);
@@ -112,12 +112,12 @@ public class KartaWydarzenia : MonoBehaviour
             game.istniejePub = true;
         }
 
-        if(przyjecieGornikowZA12==true)
+        if(przekierowanieGornikow == true)
         {
             game.przyjetoGornikowZA12 = true;
         }
 
-        if(zabranoGornikow==true)
+        if(zabranieGornikow == true)
         {
             game.przyjetoGornikowZA12 = false;
         }
@@ -165,17 +165,13 @@ public class KartaWydarzenia : MonoBehaviour
                                                         {
                                                             return true;
                                                         }
-                                                        else
+
+                                                        if ((game.przyjetoGornikowZA12 == true && zabranieGornikow == false) || (game.przyjetoGornikowZA12 == false || zabranieGornikow == false) || (game.przyjetoGornikowZA12==false && przekierowanieGornikow==true))
                                                         {
-                                                            if((game.przyjetoGornikowZA12 == true && przyjecieGornikowZA12 == true) || przyjetoGornikowZA12 == false)
-                                                            {
-                                                                return true;
-                                                            }
-                                                            else
-                                                            {
-                                                                return false;                                                                
-                                                            }
+                                                            return true;
                                                         }
+
+                                                        return false;
                                                     }
                                                     else
                                                     {

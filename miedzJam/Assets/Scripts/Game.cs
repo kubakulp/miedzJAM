@@ -46,6 +46,7 @@ public class Game : MonoBehaviour
     public bool przyjetoGornikowZA12;
     public bool maszynaDoProdukcjiRobotow;
 
+    public int idNastepnejKarty;
     private float pomPoziomWydobycia;
 
     private void Start()
@@ -155,7 +156,6 @@ public class Game : MonoBehaviour
 
     public bool CheckEndOrWin()
     {
-
         if (miedzWin <= miedzValue)
         {
             Win();
