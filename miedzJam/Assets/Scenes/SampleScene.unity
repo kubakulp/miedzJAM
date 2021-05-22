@@ -898,6 +898,7 @@ MonoBehaviour:
   animatorPanelMenu: {fileID: 1627319251}
   animatorZebatki1: {fileID: 2045480515}
   animatorZebatki2: {fileID: 1432042600}
+  animatorZebatki3: {fileID: 1816518966}
   talia: {fileID: 747368916}
 --- !u!1 &519420028
 GameObject:
@@ -2998,7 +2999,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288138154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 511, y: 862, z: 0}
+  m_LocalPosition: {x: 511, y: -376, z: 0}
   m_LocalScale: {x: 42.667995, y: 42.667995, z: 42.667995}
   m_Children: []
   m_Father: {fileID: 0}
