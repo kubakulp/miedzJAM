@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis
-      value: "Nie macie tam za du\u017Co robot\xF3w? Przydad mi taki si\u0119 gdzie
+      value: "Nie macie tam za du\u017Co robot\xF3w? Przyda mi si\u0119 taki gdzie
         indziej, je\u015Bli mo\u017Cecie jakiego\u015B odst\u0105pi\u0107."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,

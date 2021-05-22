@@ -21,7 +21,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: id
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: iloscWTalii
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -41,22 +41,23 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis
-      value: "Szefie, robimy co\u015B z t\u0105 fabryk\u0105 robot\xF3w?"
+      value: "Szefie, jeden z g\xF3rnik\xF3w zapyta\u0142 mnie, czemu nie maluj\u0119
+        si\u0119 do pracy."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis1
-      value: Zadbajmy o odpowiednie naprawy.
+      value: "Makija\u017C nie jest potrzebny w twojej pracy."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Nic nie r\xF3bmy."
+      value: "Ma racj\u0119, powinna\u015B nosi\u0107 makija\u017C."
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: srebro1
-      value: -160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -86,7 +87,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: iloscGornikowWiekszaNiz
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -125,8 +126,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
-      propertyPath: miedz1
-      value: -100
+      propertyPath: wymagaMaszynaDoProdukcjiRobotow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscMiedziWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: iloscSrebraWiekszaNiz
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: zabranieGornikow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: idNastepnejKartyOpcja1
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
+        type: 3}
+      propertyPath: idNastepnejKartyOpcja2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}

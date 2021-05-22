@@ -41,7 +41,8 @@ PrefabInstance:
         type: 3}
       propertyPath: PodajOpis
       value: "Szefie, bo ch\u0142opaki si\u0119 skar\u017C\u0105, \u017Ce nie ma
-        co po pracy robi\u0107. Mo\u017Ce by tak jaki\u015B pubik otworzy\u0107?"
+        co po pracy robi\u0107. Mo\u017Ce jakie\u015B wsp\xF3lne ogl\u0105danie filmu
+        zorganizowa\u0107?"
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -51,17 +52,18 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: PodajOpis2
-      value: "Jak si\u0119 popij\u0105, to b\u0119dzie tylko wi\u0119cej wypadk\xF3w. "
+      value: "Oczy wam si\u0119 psuj\u0105 pod ziemi\u0105 i jeszcze filmy chcecie
+        ogl\u0105da\u0107?"
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: srebro1
-      value: -3
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: poziomWydobycia1
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -76,7 +78,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: budujePub
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}

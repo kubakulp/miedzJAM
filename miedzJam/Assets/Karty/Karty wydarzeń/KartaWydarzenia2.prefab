@@ -15,7 +15,8 @@ PrefabInstance:
     - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
       propertyPath: PodajOpis
-      value: "Uruchomili\u015Bmy znowu kopalni\u0119 na A12-XJ. Zabieram g\xF3rnik\xF3w."
+      value: "Uruchamiamy now\u0105 kopalni\u0119 na B19-FG. Zabieram od ciebie kilku
+        g\xF3rnik\xF3w."
       objectReference: {fileID: 0}
     - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
@@ -31,6 +32,21 @@ PrefabInstance:
         type: 3}
       propertyPath: id
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: iloscWTalii
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: zabranieGornikow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: iloscGornikowWiekszaNiz
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 739033464362469027, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}

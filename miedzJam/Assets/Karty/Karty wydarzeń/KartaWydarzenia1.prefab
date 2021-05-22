@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
       propertyPath: PodajOpis
-      value: "By\u0142 wypadek na A12-XJ i musieli\u015Bmy czasowo zamkn\u0105\u0107
+      value: "By\u0142 powa\u017Cny wypadek na A12-XJ i musieli\u015Bmy zamkn\u0105\u0107
         kopalni\u0119. Przekierujemy g\xF3rnik\xF3w do ciebie."
       objectReference: {fileID: 0}
     - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
@@ -32,6 +32,16 @@ PrefabInstance:
         type: 3}
       propertyPath: id
       value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: iloscWTalii
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -313168644386182298, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
+        type: 3}
+      propertyPath: przekierowanieGornikow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 739033464362469027, guid: 5f2d692c4a34ae441bf2fb94dac1318a,
         type: 3}
