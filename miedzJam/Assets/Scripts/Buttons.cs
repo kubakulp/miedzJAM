@@ -12,6 +12,8 @@ public class Buttons : MonoBehaviour
     public Animator animatorZebatki2;
     public Animator animatorZebatki3;
     public Talia talia;
+    public GameObject panelMenu;
+    public GameObject tworcy;
 
     public void Menu()
     {
@@ -36,7 +38,8 @@ public class Buttons : MonoBehaviour
 
     public void Tworcy()
     {
-
+        panelMenu.SetActive(false);
+        tworcy.SetActive(true);
     }
 
     public void JakGrac()
