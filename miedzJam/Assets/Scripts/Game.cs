@@ -18,6 +18,19 @@ public class Game : MonoBehaviour
     public int zuzycieEnergiValue;
     public int poziomWydobyciaValue;
 
+    private int displayMiedz;
+    private int displaySrebro;
+    private int displayZadowolenie;
+    private int displayEnergia;
+    private int displayZanieczyszczenie;
+    private int displayRoboty;
+    private int displayGornicy;
+    private int displayWynagrodzenie;
+    private int displayElektrownieWeglowe;
+    private int displayElektrownieWiatrowe;
+    private int displayZuzycieEnergi;
+    private int displayPoziomWydobycia;
+
     public int miedzWin;
     public int srebroLose;
     public int zadowolenieLose;
@@ -47,7 +60,12 @@ public class Game : MonoBehaviour
     public bool maszynaDoProdukcjiRobotow;
 
     public int idNastepnejKarty;
+
     private float pomPoziomWydobycia;
+
+    private int pomPoziomWydobyciaInt;
+    private int pomWynagrodzenie;
+    private int pomZuzycieEnergi;
 
     private void Start()
     {
@@ -60,53 +78,203 @@ public class Game : MonoBehaviour
         robotyText.text = robotyValue.ToString();
         elektrownieWegloweText.text = elektrownieWegloweValue.ToString();
         elektrownieWiatroweText.text = elektrownieWiatroweValue.ToString();
-        zuzycieEnergiText.text = zuzycieEnergiValue.ToString();
-        poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
+
         WyswietlWynagrodzenie();
         WyswietlPoziomWydobycia();
         WyswietlZuzycieEnergii();
+
+        wynagrodzenieText.text = pomWynagrodzenie.ToString();
+        poziomWydobyciaText.text = pomPoziomWydobyciaInt.ToString();
+        zuzycieEnergiText.text = pomZuzycieEnergi.ToString();
+
+        displayMiedz = miedzValue;
+        displaySrebro = srebroValue;
+        displayZadowolenie = zadowolenieValue;
+        displayEnergia = energiaValue;
+        displayZanieczyszczenie = zanieczyszczenieValue;
+        displayGornicy = gornicyValue;
+        displayRoboty = robotyValue;
+        displayElektrownieWeglowe = elektrownieWegloweValue;
+        displayElektrownieWiatrowe = elektrownieWiatroweValue;
+        displayWynagrodzenie = pomWynagrodzenie;
+        displayPoziomWydobycia = pomPoziomWydobyciaInt;
+        displayZuzycieEnergi = pomZuzycieEnergi;
+        StartCoroutine(ScoreUpdater());
+    }
+
+    private IEnumerator ScoreUpdater()
+    {
+        while (true)
+        {
+            if (displayMiedz < miedzValue)
+            {
+                displayMiedz++; //Increment the display score by 1
+                miedzText.text = displayMiedz.ToString(); //Write it to the UI
+            }
+            else if (displayMiedz > miedzValue)
+            {
+                displayMiedz--;
+                miedzText.text = displayMiedz.ToString(); //Write it to the UI
+            }
+
+            if (displaySrebro < srebroValue)
+            {
+                displaySrebro++; //Increment the display score by 1
+                srebroText.text = displaySrebro.ToString(); //Write it to the UI
+            }
+            else if (displaySrebro > srebroValue)
+            {
+                displaySrebro--;
+                srebroText.text = displaySrebro.ToString(); //Write it to the UI
+            }
+
+            if (displayZadowolenie < zadowolenieValue)
+            {
+                displayZadowolenie++; //Increment the display score by 1
+                zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
+            }
+            else if (displayZadowolenie > zadowolenieValue)
+            {
+                displayZadowolenie--;
+                zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
+            }
+
+            if (displayEnergia < energiaValue)
+            {
+                displayEnergia++; //Increment the display score by 1
+                energiaText.text = displayEnergia.ToString(); //Write it to the UI
+            }
+            else if (displayEnergia > energiaValue)
+            {
+                displayEnergia--;
+                energiaText.text = displayEnergia.ToString(); //Write it to the UI
+            }
+
+            if (displayZanieczyszczenie < zanieczyszczenieValue)
+            {
+                displayZanieczyszczenie++; //Increment the display score by 1
+                zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
+            }
+            else if (displayZanieczyszczenie > zanieczyszczenieValue)
+            {
+                displayZanieczyszczenie--;
+                zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
+            }
+
+            if (displayGornicy < gornicyValue)
+            {
+                displayGornicy++; //Increment the display score by 1
+                gornicyText.text = displayGornicy.ToString(); //Write it to the UI
+            }
+            else if (displayGornicy > gornicyValue)
+            {
+                displayGornicy--;
+                gornicyText.text = displayGornicy.ToString(); //Write it to the UI
+            }
+
+            if (displayRoboty < robotyValue)
+            {
+                displayRoboty++; //Increment the display score by 1
+                robotyText.text = displayRoboty.ToString(); //Write it to the UI
+            }
+            else if (displayRoboty > robotyValue)
+            {
+                displayRoboty--;
+                robotyText.text = displayRoboty.ToString(); //Write it to the UI
+            }
+
+            if (displayElektrownieWeglowe < elektrownieWegloweValue)
+            {
+                displayElektrownieWeglowe++; //Increment the display score by 1
+                elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
+            }
+            else if (displayElektrownieWeglowe > elektrownieWegloweValue)
+            {
+                displayElektrownieWeglowe--;
+                elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
+            }
+
+            if (displayElektrownieWiatrowe < elektrownieWiatroweValue)
+            {
+                displayElektrownieWiatrowe++; //Increment the display score by 1
+                elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
+            }
+            else if (displayElektrownieWiatrowe > elektrownieWiatroweValue)
+            {
+                displayElektrownieWiatrowe--;
+                elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
+            }
+
+            if (displayWynagrodzenie < pomWynagrodzenie)
+            {
+                displayWynagrodzenie++; //Increment the display score by 1
+                wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
+            }
+            else if (displayWynagrodzenie > pomWynagrodzenie)
+            {
+                displayWynagrodzenie--;
+                wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
+            }
+
+            if (displayPoziomWydobycia < pomPoziomWydobyciaInt)
+            {
+                displayPoziomWydobycia++; //Increment the display score by 1
+                poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
+            }
+            else if (displayPoziomWydobycia > pomPoziomWydobyciaInt)
+            {
+                displayPoziomWydobycia--;
+                poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
+            }
+
+            if (displayZuzycieEnergi < zuzycieEnergiValue)
+            {
+                displayZuzycieEnergi++; //Increment the display score by 1
+                zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
+            }
+            else if (displayZuzycieEnergi > zuzycieEnergiValue)
+            {
+                displayZuzycieEnergi--;
+                zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
+            }
+
+            yield return new WaitForSeconds(0.01f); // I used .2 secs but you can update it as fast as you want
+        }
     }
 
     public void ZmienIloscMiedzi(int x)
     {
         miedzValue = miedzValue + x;
-        miedzText.text = miedzValue.ToString();
     }
 
     public void ZmienIloscSrebra(int x)
     {
         srebroValue = srebroValue + x;
-        srebroText.text = srebroValue.ToString();
     }
 
     public void ZmienIloscZadowolenia(int x)
     {
         zadowolenieValue = zadowolenieValue + x;
-        zadowolenieText.text = zadowolenieValue.ToString();
     }
 
     public void ZmienIloscEnergii(int x)
     {
         energiaValue = energiaValue + x;
-        energiaText.text = energiaValue.ToString();
     }
 
     public void ZmienIloscZanieczyszczenia(int x)
     {
         zanieczyszczenieValue = zanieczyszczenieValue + x;
-        zanieczyszczenieText.text = zanieczyszczenieValue.ToString();
     }
 
     public void ZmienIloscGornikow(int x)
     {
         gornicyValue = gornicyValue + x;
-        gornicyText.text = gornicyValue.ToString();
     }
 
     public void ZmienIloscRobotow(int x)
     {
         robotyValue = robotyValue + x;
-        robotyText.text = robotyValue.ToString();
     }
 
     public void ZmienIloscWynagrodzenia(int x)
@@ -117,41 +285,37 @@ public class Game : MonoBehaviour
     public void ZmienIloscElektrowniWeglowych(int x)
     {
         elektrownieWegloweValue = elektrownieWegloweValue + x;
-        elektrownieWegloweText.text = elektrownieWegloweValue.ToString();
     }
 
     public void ZmienIloscElektrowniWiatrowych(int x)
     {
         elektrownieWiatroweValue = elektrownieWiatroweValue + x;
-        elektrownieWiatroweText.text = elektrownieWiatroweValue.ToString();
     }
 
     public void ZmienIloscZuzyciaEnergi(int x)
     {
         zuzycieEnergiValue = zuzycieEnergiValue + x;
-        zuzycieEnergiText.text = zuzycieEnergiValue.ToString();
     }
 
     public void ZmienIloscPoziomuWydobycia(int x)
     {
         poziomWydobyciaValue = poziomWydobyciaValue + x;
-        poziomWydobyciaText.text = poziomWydobyciaValue.ToString();
     }
 
     public void WyswietlWynagrodzenie()
     {
-        wynagrodzenieText.text = (wynagrodzenieValue*gornicyValue).ToString();
+        pomWynagrodzenie = wynagrodzenieValue * gornicyValue;
     }
 
     public void WyswietlPoziomWydobycia()
     {
-        poziomWydobyciaText.text = ((15 * robotyValue) + (poziomWydobyciaValue * gornicyValue)).ToString();
         pomPoziomWydobycia = (15 * robotyValue) + (poziomWydobyciaValue * gornicyValue);
+        pomPoziomWydobyciaInt = (15 * robotyValue) + (poziomWydobyciaValue * gornicyValue);
     }
 
     public void WyswietlZuzycieEnergii()
     {
-        zuzycieEnergiText.text = ((10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue)).ToString();
+        pomZuzycieEnergi = (10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue);
     }
 
     public bool CheckEndOrWin()
