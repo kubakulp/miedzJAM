@@ -54,15 +54,11 @@ public class Game : MonoBehaviour
     public GameObject lose;
     public Text loseText;
     public Button winButton;
-
-    public bool istniejePub;
-    public bool przyjetoGornikowZA12;
-    public bool maszynaDoProdukcjiRobotow;
-
+    public Text pasekLadowaniaInfo;
     public int idNastepnejKarty;
+    public KartaWydarzenia obecnaKarta;
 
     private float pomPoziomWydobycia;
-
     private int pomPoziomWydobyciaInt;
     private int pomWynagrodzenie;
     private int pomZuzycieEnergi;
@@ -106,136 +102,192 @@ public class Game : MonoBehaviour
     {
         while (true)
         {
-            if (displayMiedz < miedzValue)
+            if(talia.licznikKart % talia.coIleKartJestMiesiac == 0)
             {
-                displayMiedz++; //Increment the display score by 1
-                miedzText.text = displayMiedz.ToString(); //Write it to the UI
+                if (displaySrebro < srebroValue)
+                {
+                    displaySrebro++; //Increment the display score by 1
+                    srebroText.text = displaySrebro.ToString(); //Write it to the UI
+                    pasekLadowaniaInfo.text = "Wydobywanie srebra";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else if(displayMiedz < miedzValue)
+                {
+                    displayMiedz++;
+                    miedzText.text = displayMiedz.ToString();
+                    pasekLadowaniaInfo.text = "Wydobywanie miedzi";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else if (displayEnergia < energiaValue)
+                {
+                    displayEnergia++;
+                    energiaText.text = displayEnergia.ToString();
+                    pasekLadowaniaInfo.text = "Tworzenie energi";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else if (displayZanieczyszczenie < zanieczyszczenieValue)
+                {
+                    displayZanieczyszczenie++;
+                    zanieczyszczenieText.text = displayZanieczyszczenie.ToString();
+                    pasekLadowaniaInfo.text = "Zanieczyszczenie";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else if (displayEnergia > energiaValue)
+                {
+                    displayEnergia--;
+                    energiaText.text = displayEnergia.ToString();
+                    pasekLadowaniaInfo.text = "Zuzywana energia";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else if(displaySrebro > srebroValue)
+                {
+                    displaySrebro--;
+                    srebroText.text = displaySrebro.ToString();
+                    pasekLadowaniaInfo.text = "Oplacanie gornikow";
+                    obecnaKarta.gameObject.SetActive(false);
+                }
+                else
+                {
+                    pasekLadowaniaInfo.text = "";
+                    if(obecnaKarta!=null)
+                    {
+                        obecnaKarta.gameObject.SetActive(true);
+                    }
+                }
             }
-            else if (displayMiedz > miedzValue)
+            else
             {
-                displayMiedz--;
-                miedzText.text = displayMiedz.ToString(); //Write it to the UI
-            }
+                if (displayMiedz < miedzValue)
+                {
+                    displayMiedz++; //Increment the display score by 1
+                    miedzText.text = displayMiedz.ToString(); //Write it to the UI
+                }
+                else if (displayMiedz > miedzValue)
+                {
+                    displayMiedz--;
+                    miedzText.text = displayMiedz.ToString(); //Write it to the UI
+                }
 
-            if (displaySrebro < srebroValue)
-            {
-                displaySrebro++; //Increment the display score by 1
-                srebroText.text = displaySrebro.ToString(); //Write it to the UI
-            }
-            else if (displaySrebro > srebroValue)
-            {
-                displaySrebro--;
-                srebroText.text = displaySrebro.ToString(); //Write it to the UI
-            }
+                if (displaySrebro < srebroValue)
+                {
+                    displaySrebro++; //Increment the display score by 1
+                    srebroText.text = displaySrebro.ToString(); //Write it to the UI
+                }
+                else if (displaySrebro > srebroValue)
+                {
+                    displaySrebro--;
+                    srebroText.text = displaySrebro.ToString(); //Write it to the UI
+                }
 
-            if (displayZadowolenie < zadowolenieValue)
-            {
-                displayZadowolenie++; //Increment the display score by 1
-                zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
-            }
-            else if (displayZadowolenie > zadowolenieValue)
-            {
-                displayZadowolenie--;
-                zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
-            }
+                if (displayZadowolenie < zadowolenieValue)
+                {
+                    displayZadowolenie++; //Increment the display score by 1
+                    zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
+                }
+                else if (displayZadowolenie > zadowolenieValue)
+                {
+                    displayZadowolenie--;
+                    zadowolenieText.text = displayZadowolenie.ToString(); //Write it to the UI
+                }
 
-            if (displayEnergia < energiaValue)
-            {
-                displayEnergia++; //Increment the display score by 1
-                energiaText.text = displayEnergia.ToString(); //Write it to the UI
-            }
-            else if (displayEnergia > energiaValue)
-            {
-                displayEnergia--;
-                energiaText.text = displayEnergia.ToString(); //Write it to the UI
-            }
+                if (displayEnergia < energiaValue)
+                {
+                    displayEnergia++; //Increment the display score by 1
+                    energiaText.text = displayEnergia.ToString(); //Write it to the UI
+                }
+                else if (displayEnergia > energiaValue)
+                {
+                    displayEnergia--;
+                    energiaText.text = displayEnergia.ToString(); //Write it to the UI
+                }
 
-            if (displayZanieczyszczenie < zanieczyszczenieValue)
-            {
-                displayZanieczyszczenie++; //Increment the display score by 1
-                zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
-            }
-            else if (displayZanieczyszczenie > zanieczyszczenieValue)
-            {
-                displayZanieczyszczenie--;
-                zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
-            }
+                if (displayZanieczyszczenie < zanieczyszczenieValue)
+                {
+                    displayZanieczyszczenie++; //Increment the display score by 1
+                    zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
+                }
+                else if (displayZanieczyszczenie > zanieczyszczenieValue)
+                {
+                    displayZanieczyszczenie--;
+                    zanieczyszczenieText.text = displayZanieczyszczenie.ToString(); //Write it to the UI
+                }
 
-            if (displayGornicy < gornicyValue)
-            {
-                displayGornicy++; //Increment the display score by 1
-                gornicyText.text = displayGornicy.ToString(); //Write it to the UI
-            }
-            else if (displayGornicy > gornicyValue)
-            {
-                displayGornicy--;
-                gornicyText.text = displayGornicy.ToString(); //Write it to the UI
-            }
+                if (displayGornicy < gornicyValue)
+                {
+                    displayGornicy++; //Increment the display score by 1
+                    gornicyText.text = displayGornicy.ToString(); //Write it to the UI
+                }
+                else if (displayGornicy > gornicyValue)
+                {
+                    displayGornicy--;
+                    gornicyText.text = displayGornicy.ToString(); //Write it to the UI
+                }
 
-            if (displayRoboty < robotyValue)
-            {
-                displayRoboty++; //Increment the display score by 1
-                robotyText.text = displayRoboty.ToString(); //Write it to the UI
-            }
-            else if (displayRoboty > robotyValue)
-            {
-                displayRoboty--;
-                robotyText.text = displayRoboty.ToString(); //Write it to the UI
-            }
+                if (displayRoboty < robotyValue)
+                {
+                    displayRoboty++; //Increment the display score by 1
+                    robotyText.text = displayRoboty.ToString(); //Write it to the UI
+                }
+                else if (displayRoboty > robotyValue)
+                {
+                    displayRoboty--;
+                    robotyText.text = displayRoboty.ToString(); //Write it to the UI
+                }
 
-            if (displayElektrownieWeglowe < elektrownieWegloweValue)
-            {
-                displayElektrownieWeglowe++; //Increment the display score by 1
-                elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
-            }
-            else if (displayElektrownieWeglowe > elektrownieWegloweValue)
-            {
-                displayElektrownieWeglowe--;
-                elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
-            }
+                if (displayElektrownieWeglowe < elektrownieWegloweValue)
+                {
+                    displayElektrownieWeglowe++; //Increment the display score by 1
+                    elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
+                }
+                else if (displayElektrownieWeglowe > elektrownieWegloweValue)
+                {
+                    displayElektrownieWeglowe--;
+                    elektrownieWegloweText.text = displayElektrownieWeglowe.ToString(); //Write it to the UI
+                }
 
-            if (displayElektrownieWiatrowe < elektrownieWiatroweValue)
-            {
-                displayElektrownieWiatrowe++; //Increment the display score by 1
-                elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
-            }
-            else if (displayElektrownieWiatrowe > elektrownieWiatroweValue)
-            {
-                displayElektrownieWiatrowe--;
-                elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
-            }
+                if (displayElektrownieWiatrowe < elektrownieWiatroweValue)
+                {
+                    displayElektrownieWiatrowe++; //Increment the display score by 1
+                    elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
+                }
+                else if (displayElektrownieWiatrowe > elektrownieWiatroweValue)
+                {
+                    displayElektrownieWiatrowe--;
+                    elektrownieWiatroweText.text = displayElektrownieWiatrowe.ToString(); //Write it to the UI
+                }
 
-            if (displayWynagrodzenie < pomWynagrodzenie)
-            {
-                displayWynagrodzenie++; //Increment the display score by 1
-                wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
-            }
-            else if (displayWynagrodzenie > pomWynagrodzenie)
-            {
-                displayWynagrodzenie--;
-                wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
-            }
+                if (displayWynagrodzenie < pomWynagrodzenie)
+                {
+                    displayWynagrodzenie++; //Increment the display score by 1
+                    wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
+                }
+                else if (displayWynagrodzenie > pomWynagrodzenie)
+                {
+                    displayWynagrodzenie--;
+                    wynagrodzenieText.text = displayWynagrodzenie.ToString(); //Write it to the UI
+                }
 
-            if (displayPoziomWydobycia < pomPoziomWydobyciaInt)
-            {
-                displayPoziomWydobycia++; //Increment the display score by 1
-                poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
-            }
-            else if (displayPoziomWydobycia > pomPoziomWydobyciaInt)
-            {
-                displayPoziomWydobycia--;
-                poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
-            }
+                if (displayPoziomWydobycia < pomPoziomWydobyciaInt)
+                {
+                    displayPoziomWydobycia++; //Increment the display score by 1
+                    poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
+                }
+                else if (displayPoziomWydobycia > pomPoziomWydobyciaInt)
+                {
+                    displayPoziomWydobycia--;
+                    poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
+                }
 
-            if (displayZuzycieEnergi < pomZuzycieEnergi)
-            {
-                displayZuzycieEnergi++; //Increment the display score by 1
-                zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
-            }
-            else if (displayZuzycieEnergi > pomZuzycieEnergi)
-            {
-                displayZuzycieEnergi--;
-                zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
+                if (displayZuzycieEnergi < pomZuzycieEnergi)
+                {
+                    displayZuzycieEnergi++; //Increment the display score by 1
+                    zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
+                }
+                else if (displayZuzycieEnergi > pomZuzycieEnergi)
+                {
+                    displayZuzycieEnergi--;
+                    zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
+                }
             }
 
             yield return new WaitForSeconds(0.01f); // I used .2 secs but you can update it as fast as you want
