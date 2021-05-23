@@ -955,12 +955,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494991621}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 523.216, y: 475.41403, z: 175646.05}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 531.24475, y: 638.7484, z: 328514.4}
+  m_LocalScale: {x: 1.8711728, y: 1.8711728, z: 1.8711728}
+  m_Children:
+  - {fileID: 747368917}
+  m_Father: {fileID: 925579771}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494991623
 MonoBehaviour:
@@ -980,6 +981,7 @@ MonoBehaviour:
   animatorZebatki1: {fileID: 2045480515}
   animatorZebatki2: {fileID: 1432042600}
   animatorZebatki3: {fileID: 1816518966}
+  animatorPierwszaKarta: {fileID: 0}
   talia: {fileID: 747368916}
   panelMenu: {fileID: 1627319248}
   tworcy: {fileID: 27649849}
@@ -1568,10 +1570,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747368915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 800, y: 500, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 143.6293, y: -74.15052, z: -175566.05}
+  m_LocalScale: {x: 0.5344242, y: 0.5344242, z: 0.5344242}
   m_Children: []
-  m_Father: {fileID: 925579771}
+  m_Father: {fileID: 494991622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &760116151
@@ -2360,7 +2362,7 @@ Transform:
   m_LocalPosition: {x: -514, y: -289, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 747368917}
+  - {fileID: 494991622}
   m_Father: {fileID: 1806268070}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 4560409510788154863}
   - component: {fileID: 4560409510788154862}
   - component: {fileID: 4560409510788154857}
+  - component: {fileID: -5034551050879489163}
   m_Layer: 0
   m_Name: Karta
   m_TagString: Untagged
@@ -614,6 +615,25 @@ MonoBehaviour:
   zuzycieEnergi2: 0
   poziomWydobycia2: 0
   idNastepnejKartyOpcja2: 0
+--- !u!95 &-5034551050879489163
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560409510788154856}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9db179076486a24dbb2fe59b1455c94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4560409511011893006
 GameObject:
   m_ObjectHideFlags: 0
