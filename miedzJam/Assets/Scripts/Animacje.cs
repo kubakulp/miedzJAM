@@ -7,6 +7,8 @@ public class Animacje : MonoBehaviour
 {
     public GameObject logo;
     public Animator animatorLoga;
+    public AudioSource zjazdWindy;
+    public AudioClip audioClip;
 
     public void LoadNewScene()
     {
@@ -17,5 +19,10 @@ public class Animacje : MonoBehaviour
     {
         logo.SetActive(true);
         animatorLoga.Play("animacjaLogo");
+    }
+
+    public void OdpalZjazdWindyDzwiek()
+    {
+        zjazdWindy.PlayOneShot(audioClip);
     }
 }
