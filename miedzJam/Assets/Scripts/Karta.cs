@@ -50,8 +50,11 @@ public class Karta : KartaWydarzenia
         game.ZmienIloscElektrowniWiatrowych(elektrownieWiatrowe2);
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi2);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia2);
-        Destroy(gameObject);
+        Animator animatorKarty = GetComponent<Animator>();
+        animatorKarty.Play("animacjaZuzytaKarta");
         talia.licznikKart++;
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 1;
         if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
         {
             game.Miesiac();
