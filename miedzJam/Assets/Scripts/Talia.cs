@@ -29,6 +29,7 @@ public class Talia : MonoBehaviour
             {
                 var myNewSmoke = Instantiate(pojedynczeKarty[game.idNastepnejKarty-1], transform);
                 myNewSmoke.transform.parent = gameObject.transform;
+                game.obecnaKarta = myNewSmoke;
                 game.idNastepnejKarty = 0;
                 break;
             }
@@ -41,6 +42,7 @@ public class Talia : MonoBehaviour
                     {
                         var myNewSmoke = Instantiate(prawdziwaTalia[random], transform);
                         myNewSmoke.transform.parent = gameObject.transform;
+                        game.obecnaKarta = myNewSmoke;
 
                         if (prawdziwaTalia[random].czyUsuwanaZTali == true)
                         {

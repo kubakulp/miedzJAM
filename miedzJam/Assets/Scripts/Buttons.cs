@@ -11,6 +11,7 @@ public class Buttons : MonoBehaviour
     public Animator animatorZebatki1;
     public Animator animatorZebatki2;
     public Animator animatorZebatki3;
+    public Animator animatorPierwszaKarta;
     public Talia talia;
     public GameObject panelMenu;
     public GameObject tworcy;
@@ -18,7 +19,7 @@ public class Buttons : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Game()
@@ -32,6 +33,8 @@ public class Buttons : MonoBehaviour
             animatorPanelMenu.Play("animacjaPanelMenu");
             animatorStatystyki.Play("animacjaStatystyki");
             talia.LosujNowaKarte();
+            animatorPierwszaKarta = GetComponentInChildren<Animator>();
+            animatorPierwszaKarta.Play("animacjaPierwszaKarta");
         }
 
         this.enabled = false;

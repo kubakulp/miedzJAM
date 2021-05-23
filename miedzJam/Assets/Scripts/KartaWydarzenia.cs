@@ -58,18 +58,6 @@ public class KartaWydarzenia : MonoBehaviour
     public int wymaganyPoziomWydobyciaWiekszyNiz;
     public int wymaganyPoziomWydobyciaMniejszyNiz;
 
-    //Warunki wydarzen
-    public bool wymagaPubu;
-    public bool budujePub;
-
-    public bool przekierowanieGornikow;
-    public bool zabranieGornikow;
-
-    public bool budujeMaszyneDoProdukcjiRobotow;
-    public bool maszynaDoRobotowJestPopsuta;
-    public bool wymagaMaszynaDoProdukcjiRobotow;
-    public bool maszynaDoRobotowSiePsuje;
-
     private void Start()
     {
         nazwa.text = PodajNazwe;
@@ -93,8 +81,11 @@ public class KartaWydarzenia : MonoBehaviour
         game.ZmienIloscElektrowniWiatrowych(elektrownieWiatrowe1);
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi1);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia1);
-        Destroy(gameObject);
+        Animator animatorKarty = GetComponent<Animator>();
+        animatorKarty.Play("animacjaZuzytaKarta");
         talia.licznikKart++;
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 1;
         if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
         {
             game.Miesiac();
@@ -105,21 +96,6 @@ public class KartaWydarzenia : MonoBehaviour
         if (game.CheckEndOrWin() == false)
         {
             talia.LosujNowaKarte();
-        }
-
-        if (budujePub == true)
-        {
-            game.istniejePub = true;
-        }
-
-        if(przekierowanieGornikow == true)
-        {
-            game.przyjetoGornikowZA12 = true;
-        }
-
-        if(zabranieGornikow == true)
-        {
-            game.przyjetoGornikowZA12 = false;
         }
     }
 
@@ -161,16 +137,6 @@ public class KartaWydarzenia : MonoBehaviour
                                                 {
                                                     if (Porownaj(game.poziomWydobyciaValue, wymaganyPoziomWydobyciaMniejszyNiz, wymaganyPoziomWydobyciaWiekszyNiz) == true)
                                                     {
-                                                        /*if (wymagaPubu == true && game.istniejePub == true)
-                                                        {
-                                                            return true;
-                                                        }
-
-                                                        if ((game.przyjetoGornikowZA12 == true && zabranieGornikow == false) || (game.przyjetoGornikowZA12 == false || zabranieGornikow == false) || (game.przyjetoGornikowZA12==false && przekierowanieGornikow==true))
-                                                        {
-                                                            return true;
-                                                        }
-                                                        */
                                                         return true;
                                                     }
                                                     else
