@@ -4156,7 +4156,7 @@ MonoBehaviour:
   elektrownieWiatroweValue: 0
   zuzycieEnergiValue: 0
   poziomWydobyciaValue: 30
-  miedzWin: 1001
+  miedzWin: 5000
   srebroLose: 0
   zadowolenieLose: 0
   energiaLose: 0
