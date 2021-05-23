@@ -70,6 +70,12 @@ public class Game : MonoBehaviour
     public GameObject osiemdziesiat;
     public GameObject sto;
 
+    public int pomSrebro;
+    public int pomEnergia;
+    public int pomSrebro1;
+    public int pomEnergia1;
+    int pom;
+
     private void Start()
     {
         miedzText.text = miedzValue.ToString();
@@ -107,27 +113,16 @@ public class Game : MonoBehaviour
 
     private IEnumerator ScoreUpdater()
     {
+
         while (true)
         {
-            if(talia.licznikKart % talia.coIleKartJestMiesiac == 0 && CheckEndOrWin() == false)
+            if(talia.licznikKart % talia.coIleKartJestMiesiac == 0 && CheckEndOrWin() == false && talia.licznikKart!=0)
             {
-                if (displaySrebro < srebroValue)
+                if (displayMiedz < miedzValue && pom<2)
                 {
+                    pom = 1;
                     zero.SetActive(true);
                     dwadziescia.SetActive(false);
-                    czterdziesci.SetActive(false);
-                    szescdziesiat.SetActive(false);
-                    osiemdziesiat.SetActive(false);
-                    sto.SetActive(false);
-                    displaySrebro++; //Increment the display score by 1
-                    srebroText.text = displaySrebro.ToString(); //Write it to the UI
-                    pasekLadowaniaInfo.text = "Wydobywanie srebra";
-                    obecnaKarta.gameObject.SetActive(false);
-                }
-                else if(displayMiedz < miedzValue)
-                {
-                    zero.SetActive(false);
-                    dwadziescia.SetActive(true);
                     czterdziesci.SetActive(false);
                     szescdziesiat.SetActive(false);
                     osiemdziesiat.SetActive(false);
@@ -135,10 +130,31 @@ public class Game : MonoBehaviour
                     displayMiedz++;
                     miedzText.text = displayMiedz.ToString();
                     pasekLadowaniaInfo.text = "Wydobywanie miedzi";
-                    obecnaKarta.gameObject.SetActive(false);
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
                 }
-                else if (displayEnergia < energiaValue)
+                else if (displaySrebro < pomSrebro && pom<3)
                 {
+                    pom = 2;
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(true);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
+                    displaySrebro++; //Increment the display score by 1
+                    srebroText.text = displaySrebro.ToString(); //Write it to the UI
+                    pasekLadowaniaInfo.text = "Wydobywanie srebra";
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
+                }
+                else if (displayEnergia < pomEnergia && pom < 4)
+                {
+                    pom = 3;
                     zero.SetActive(false);
                     dwadziescia.SetActive(false);
                     czterdziesci.SetActive(true);
@@ -147,11 +163,15 @@ public class Game : MonoBehaviour
                     sto.SetActive(false);
                     displayEnergia++;
                     energiaText.text = displayEnergia.ToString();
-                    pasekLadowaniaInfo.text = "Tworzenie energi";
-                    obecnaKarta.gameObject.SetActive(false);
+                    pasekLadowaniaInfo.text = "Generowanie energii";
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
                 }
-                else if (displayZanieczyszczenie < zanieczyszczenieValue)
+                else if (displayZanieczyszczenie < zanieczyszczenieValue && pom < 5)
                 {
+                    pom = 4;
                     zero.SetActive(false);
                     dwadziescia.SetActive(false);
                     czterdziesci.SetActive(false);
@@ -160,11 +180,15 @@ public class Game : MonoBehaviour
                     sto.SetActive(false);
                     displayZanieczyszczenie++;
                     zanieczyszczenieText.text = displayZanieczyszczenie.ToString();
-                    pasekLadowaniaInfo.text = "Zanieczyszczenie";
-                    obecnaKarta.gameObject.SetActive(false);
+                    pasekLadowaniaInfo.text = "Badanie poziomu zanieczyszczeń";
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
                 }
-                else if (displayEnergia > energiaValue)
+                else if (displayEnergia > pomEnergia1 && pom < 6)
                 {
+                    pom = 5;
                     zero.SetActive(false);
                     dwadziescia.SetActive(false);
                     czterdziesci.SetActive(false);
@@ -173,11 +197,15 @@ public class Game : MonoBehaviour
                     sto.SetActive(false);
                     displayEnergia--;
                     energiaText.text = displayEnergia.ToString();
-                    pasekLadowaniaInfo.text = "Zuzywana energia";
-                    obecnaKarta.gameObject.SetActive(false);
+                    pasekLadowaniaInfo.text = "Wykorzystanie energii";
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
                 }
-                else if(displaySrebro > srebroValue)
+                else if(displaySrebro > pomSrebro1 && pom < 7)
                 {
+                    pom = 6;
                     zero.SetActive(false);
                     dwadziescia.SetActive(false);
                     czterdziesci.SetActive(false);
@@ -186,11 +214,15 @@ public class Game : MonoBehaviour
                     sto.SetActive(true);
                     displaySrebro--;
                     srebroText.text = displaySrebro.ToString();
-                    pasekLadowaniaInfo.text = "Oplacanie gornikow";
-                    obecnaKarta.gameObject.SetActive(false);
+                    pasekLadowaniaInfo.text = "Wypłacanie pensji";
+                    if (obecnaKarta != null)
+                    {
+                        obecnaKarta.gameObject.SetActive(false);
+                    }
                 }
                 else
                 {
+                    pom = 7;
                     zero.SetActive(false);
                     dwadziescia.SetActive(false);
                     czterdziesci.SetActive(false);
@@ -467,17 +499,22 @@ public class Game : MonoBehaviour
 
     public void Miesiac()
     {
-        int pom = 0;
+        pom = 0;
+        int pom1 = 0;
         int x = (int)(pomPoziomWydobycia * 0.666);
         if(x != (pomPoziomWydobycia * 0.666f))
         {
-            pom = 1;
+            pom1 = 1;
         }
-        ZmienIloscSrebra(x+pom);
+        ZmienIloscSrebra(x+pom1);
+        pomSrebro = srebroValue;
         ZmienIloscMiedzi((int)(pomPoziomWydobycia*0.334f));
         ZmienIloscEnergii((80*elektrownieWegloweValue)+(60*elektrownieWiatroweValue));
+        pomEnergia = energiaValue;
         ZmienIloscZanieczyszczenia(10*elektrownieWegloweValue);
         ZmienIloscEnergii(-(10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue));
+        pomEnergia1 = energiaValue;
         ZmienIloscSrebra(-(wynagrodzenieValue * gornicyValue));
+        pomSrebro1 = srebroValue;
     }
 }
