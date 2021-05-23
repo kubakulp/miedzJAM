@@ -12,6 +12,7 @@ public class Buttons : MonoBehaviour
     public Animator animatorZebatki2;
     public Animator animatorZebatki3;
     public Animator animatorPierwszaKarta;
+    public Animator animatorKartaWygrana;
     public Talia talia;
     public GameObject panelMenu;
     public GameObject tworcy;
@@ -77,8 +78,6 @@ public class Buttons : MonoBehaviour
 
     public void KoniecGry()
     {
-        Destroy(kartaZwyciestwa);
-        Destroy(statystyki);
         statek.SetActive(true);
         wiatrak1.SetActive(true);
         wiatrak2.SetActive(true);
@@ -86,7 +85,9 @@ public class Buttons : MonoBehaviour
         animatorZebatki1.Play("animacjaZebatka1");
         animatorZebatki2.Play("animacjaZebatka1");
         animatorZebatki3.Play("animacjaZebatka1");
-        animatorZebatki3.Play("animacjaZebatka1");
         animatorStatku.Play("animacjaStatek");
+        animatorStatystyki.Play("statystykiKoniecGry");
+        animatorStatystyki.Play("statystykiKoniecGry");
+        animatorKartaWygrana.Play("kartaWygranej");
     }
 }

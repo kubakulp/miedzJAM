@@ -1916,6 +1916,7 @@ MonoBehaviour:
   animatorZebatki2: {fileID: 1432042600}
   animatorZebatki3: {fileID: 1816518966}
   animatorPierwszaKarta: {fileID: 0}
+  animatorKartaWygrana: {fileID: 801980434}
   talia: {fileID: 747368916}
   panelMenu: {fileID: 1627319248}
   tworcy: {fileID: 27649849}
@@ -3324,6 +3325,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1418703860957392766, guid: 127e5c2abda05c5419ea518e3949e490,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d42d6342fc1760a43971a24b8ae06d20, type: 2}
     - target: {fileID: 5958996454711459319, guid: 127e5c2abda05c5419ea518e3949e490,
         type: 3}
       propertyPath: m_SortingOrder
@@ -3405,6 +3411,12 @@ Transform:
 --- !u!1 &801980433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1046361499160532440, guid: 127e5c2abda05c5419ea518e3949e490,
+    type: 3}
+  m_PrefabInstance: {fileID: 801980431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &801980434 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1418703860957392766, guid: 127e5c2abda05c5419ea518e3949e490,
     type: 3}
   m_PrefabInstance: {fileID: 801980431}
   m_PrefabAsset: {fileID: 0}
