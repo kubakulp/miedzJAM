@@ -17,6 +17,14 @@ public class Buttons : MonoBehaviour
     public GameObject tworcy;
     public GameObject jakGrac;
 
+    public Animator animatorKoniecGry;
+    public Animator animatorStatku;
+    public GameObject statek;
+    public GameObject wiatrak1;
+    public GameObject wiatrak2;
+    public GameObject kartaZwyciestwa;
+    public GameObject statystyki;
+
     public void Menu()
     {
         SceneManager.LoadScene(1);
@@ -65,5 +73,20 @@ public class Buttons : MonoBehaviour
     public void ZagrajJeszczeRaz()
     {
 
+    }
+
+    public void KoniecGry()
+    {
+        Destroy(kartaZwyciestwa);
+        Destroy(statystyki);
+        statek.SetActive(true);
+        wiatrak1.SetActive(true);
+        wiatrak2.SetActive(true);
+        animatorKoniecGry.Play("koniecGry");
+        animatorZebatki1.Play("animacjaZebatka1");
+        animatorZebatki2.Play("animacjaZebatka1");
+        animatorZebatki3.Play("animacjaZebatka1");
+        animatorZebatki3.Play("animacjaZebatka1");
+        animatorStatku.Play("animacjaStatek");
     }
 }

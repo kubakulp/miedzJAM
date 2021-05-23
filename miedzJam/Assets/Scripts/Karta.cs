@@ -53,8 +53,6 @@ public class Karta : KartaWydarzenia
         Animator animatorKarty = GetComponent<Animator>();
         animatorKarty.Play("animacjaZuzytaKarta");
         talia.licznikKart++;
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        sprite.sortingOrder = 1;
         if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
         {
             game.Miesiac();
