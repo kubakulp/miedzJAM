@@ -4145,7 +4145,7 @@ MonoBehaviour:
   miedzValue: 1000
   srebroValue: 1000
   zadowolenieValue: 50
-  energiaValue: 100
+  energiaValue: 1000
   zanieczyszczenieValue: 30
   gornicyValue: 10
   robotyValue: 2
@@ -4188,7 +4188,7 @@ MonoBehaviour:
   pomEnergia: 0
   pomSrebro1: 0
   pomEnergia1: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 716187907}
 --- !u!4 &925579771
 Transform:
   m_ObjectHideFlags: 0
