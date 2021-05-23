@@ -512,7 +512,7 @@ public class Game : MonoBehaviour
         ZmienIloscEnergii((80*elektrownieWegloweValue)+(60*elektrownieWiatroweValue));
         pomEnergia = energiaValue;
         ZmienIloscZanieczyszczenia(10*elektrownieWegloweValue);
-        ZmienIloscEnergii(-(10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue));
+        ZmienIloscEnergii(-((120 * elektrownieWegloweValue) + (150 * elektrownieWiatroweValue) + (100 * robotyValue)));
         pomEnergia1 = energiaValue;
         ZmienIloscSrebra(-(wynagrodzenieValue * gornicyValue));
         pomSrebro1 = srebroValue;
