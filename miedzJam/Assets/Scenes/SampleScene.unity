@@ -4156,11 +4156,11 @@ MonoBehaviour:
   elektrownieWiatroweValue: 0
   zuzycieEnergiValue: 0
   poziomWydobyciaValue: 30
-  miedzWin: 1001
+  miedzWin: 10000
   srebroLose: 0
   zadowolenieLose: 0
   energiaLose: 0
-  zanieczyszczenieLose: 200
+  zanieczyszczenieLose: 50
   miedzText: {fileID: 650766752}
   srebroText: {fileID: 691623426}
   zadowolenieText: {fileID: 786130670}

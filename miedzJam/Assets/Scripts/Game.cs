@@ -240,8 +240,6 @@ public class Game : MonoBehaviour
             }
             else
             {
-                if(CheckEndOrWin() == false)
-                {
                     if (displayMiedz < miedzValue)
                     {
                         displayMiedz++; //Increment the display score by 1
@@ -373,7 +371,6 @@ public class Game : MonoBehaviour
                         displayZuzycieEnergi--;
                         zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
                     }
-                }
             }
 
             yield return new WaitForSeconds(0.01f); // I used .2 secs but you can update it as fast as you want
