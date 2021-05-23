@@ -76,6 +76,8 @@ public class Game : MonoBehaviour
     public int pomEnergia1;
     int pom;
 
+    public AudioSource audioSource;
+
     private void Start()
     {
         miedzText.text = miedzValue.ToString();
@@ -495,6 +497,7 @@ public class Game : MonoBehaviour
             loseText.text = "Poziom zanieczyszczenia jest zbyt wysoki";
         }
         lose.gameObject.SetActive(true);
+        audioSource.mute = true;
     }
 
     public void Miesiac()
