@@ -14,6 +14,7 @@ public class Buttons : MonoBehaviour
     public Talia talia;
     public GameObject panelMenu;
     public GameObject tworcy;
+    public GameObject jakGrac;
 
     public void Menu()
     {
@@ -44,7 +45,8 @@ public class Buttons : MonoBehaviour
 
     public void JakGrac()
     {
-
+        panelMenu.SetActive(false);
+        jakGrac.SetActive(true);
     }
 
     public void Wyjdz()
