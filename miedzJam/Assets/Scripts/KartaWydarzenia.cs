@@ -81,8 +81,7 @@ public class KartaWydarzenia : MonoBehaviour
         game.ZmienIloscElektrowniWiatrowych(elektrownieWiatrowe1);
         game.ZmienIloscZuzyciaEnergi(zuzycieEnergi1);
         game.ZmienIloscPoziomuWydobycia(poziomWydobycia1);
-        Animator animatorKarty = GetComponent<Animator>();
-        animatorKarty.Play("animacjaZuzytaKarta");
+        Destroy(this.gameObject);
         talia.licznikKart++;
         if (talia.licznikKart % talia.coIleKartJestMiesiac == 0)
         {
