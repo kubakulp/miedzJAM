@@ -451,7 +451,7 @@ public class Game : MonoBehaviour
 
     public void WyswietlZuzycieEnergii()
     {
-        pomZuzycieEnergi = (10 * elektrownieWegloweValue) + (5 * elektrownieWiatroweValue) + (2 * robotyValue);
+        pomZuzycieEnergi = (120 * elektrownieWegloweValue) + (150 * elektrownieWiatroweValue) + (100 * robotyValue);
     }
 
     public bool CheckEndOrWin()
