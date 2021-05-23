@@ -227,12 +227,12 @@ public class Game : MonoBehaviour
                 poziomWydobyciaText.text = displayPoziomWydobycia.ToString(); //Write it to the UI
             }
 
-            if (displayZuzycieEnergi < zuzycieEnergiValue)
+            if (displayZuzycieEnergi < pomZuzycieEnergi)
             {
                 displayZuzycieEnergi++; //Increment the display score by 1
                 zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
             }
-            else if (displayZuzycieEnergi > zuzycieEnergiValue)
+            else if (displayZuzycieEnergi > pomZuzycieEnergi)
             {
                 displayZuzycieEnergi--;
                 zuzycieEnergiText.text = displayZuzycieEnergi.ToString(); //Write it to the UI
