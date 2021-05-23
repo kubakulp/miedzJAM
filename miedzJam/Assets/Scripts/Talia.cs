@@ -30,6 +30,8 @@ public class Talia : MonoBehaviour
                 var myNewSmoke = Instantiate(pojedynczeKarty[game.idNastepnejKarty-1], transform);
                 myNewSmoke.transform.parent = gameObject.transform;
                 game.obecnaKarta = myNewSmoke;
+                SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+                spriteRenderer.sortingOrder = 300;
                 game.idNastepnejKarty = 0;
                 break;
             }
@@ -42,7 +44,10 @@ public class Talia : MonoBehaviour
                     {
                         var myNewSmoke = Instantiate(prawdziwaTalia[random], transform);
                         myNewSmoke.transform.parent = gameObject.transform;
+                        myNewSmoke.gameObject.layer = 30;
                         game.obecnaKarta = myNewSmoke;
+                        SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+                        spriteRenderer.sortingOrder = 300;
 
                         if (prawdziwaTalia[random].czyUsuwanaZTali == true)
                         {
