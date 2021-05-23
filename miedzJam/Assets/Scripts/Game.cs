@@ -63,6 +63,13 @@ public class Game : MonoBehaviour
     private int pomWynagrodzenie;
     private int pomZuzycieEnergi;
 
+    public GameObject zero;
+    public GameObject dwadziescia;
+    public GameObject czterdziesci;
+    public GameObject szescdziesiat;
+    public GameObject osiemdziesiat;
+    public GameObject sto;
+
     private void Start()
     {
         miedzText.text = miedzValue.ToString();
@@ -106,6 +113,12 @@ public class Game : MonoBehaviour
             {
                 if (displaySrebro < srebroValue)
                 {
+                    zero.SetActive(true);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
                     displaySrebro++; //Increment the display score by 1
                     srebroText.text = displaySrebro.ToString(); //Write it to the UI
                     pasekLadowaniaInfo.text = "Wydobywanie srebra";
@@ -113,6 +126,12 @@ public class Game : MonoBehaviour
                 }
                 else if(displayMiedz < miedzValue)
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(true);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
                     displayMiedz++;
                     miedzText.text = displayMiedz.ToString();
                     pasekLadowaniaInfo.text = "Wydobywanie miedzi";
@@ -120,6 +139,12 @@ public class Game : MonoBehaviour
                 }
                 else if (displayEnergia < energiaValue)
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(true);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
                     displayEnergia++;
                     energiaText.text = displayEnergia.ToString();
                     pasekLadowaniaInfo.text = "Tworzenie energi";
@@ -127,6 +152,12 @@ public class Game : MonoBehaviour
                 }
                 else if (displayZanieczyszczenie < zanieczyszczenieValue)
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(true);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
                     displayZanieczyszczenie++;
                     zanieczyszczenieText.text = displayZanieczyszczenie.ToString();
                     pasekLadowaniaInfo.text = "Zanieczyszczenie";
@@ -134,6 +165,12 @@ public class Game : MonoBehaviour
                 }
                 else if (displayEnergia > energiaValue)
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(true);
+                    sto.SetActive(false);
                     displayEnergia--;
                     energiaText.text = displayEnergia.ToString();
                     pasekLadowaniaInfo.text = "Zuzywana energia";
@@ -141,6 +178,12 @@ public class Game : MonoBehaviour
                 }
                 else if(displaySrebro > srebroValue)
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(true);
                     displaySrebro--;
                     srebroText.text = displaySrebro.ToString();
                     pasekLadowaniaInfo.text = "Oplacanie gornikow";
@@ -148,6 +191,12 @@ public class Game : MonoBehaviour
                 }
                 else
                 {
+                    zero.SetActive(false);
+                    dwadziescia.SetActive(false);
+                    czterdziesci.SetActive(false);
+                    szescdziesiat.SetActive(false);
+                    osiemdziesiat.SetActive(false);
+                    sto.SetActive(false);
                     pasekLadowaniaInfo.text = "";
                     if(obecnaKarta!=null)
                     {
