@@ -1548,6 +1548,7 @@ MonoBehaviour:
   - {fileID: 9179349784345606173, guid: 02bd9eacf826d1640957a4335c6a9293, type: 3}
   - {fileID: 9179349784345606173, guid: 523258299e004034cbed9485db8c459c, type: 3}
   - {fileID: 9179349784345606173, guid: 7620ee2226dc9de478e9721c110589b2, type: 3}
+  - {fileID: 4673595323443139538, guid: ee4f0a970227d37439031e5f0f1a6ab9, type: 3}
   pojedynczeKarty:
   - {fileID: 9179349784345606173, guid: 1a6b3b4d167fbbe48ac923de5a2e9f5e, type: 3}
   - {fileID: 9179349784345606173, guid: 3328b4eb7e317764eb038410e191bd93, type: 3}
@@ -2325,7 +2326,7 @@ MonoBehaviour:
   elektrownieWegloweValue: 2
   elektrownieWiatroweValue: 0
   zuzycieEnergiValue: 0
-  poziomWydobyciaValue: 30
+  poziomWydobyciaValue: 65
   miedzWin: 10000
   srebroLose: 0
   zadowolenieLose: 0

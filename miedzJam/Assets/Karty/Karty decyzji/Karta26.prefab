@@ -57,7 +57,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: srebro1
-      value: -50
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: iloscSrebraWiekszaNiz
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154863, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}

@@ -102,7 +102,7 @@ PrefabInstance:
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
       propertyPath: srebro2
-      value: -50
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 4560409510788154857, guid: 61250440d489dc34c8ac5513c0ccfa7e,
         type: 3}
